@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Categories</title>
+  <style>
+    
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #8b6f47, #3d6b41);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.page-header p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.page-content {
+  padding: 40px;
+}
+
+.cool-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+
+.cool-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #ddd;
+}
+
+
+.cool-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+.cool-card-emoji {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+
+.cool-card-title {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+
+.cool-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+.cool-count-badge {
+  background: #eee;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+button {
+  background: #3d6b41;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #2f5231;
+}
+
+
+.ai-cta-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.ai-cta-box h2 {
+  margin-bottom: 10px;
+}
+
+.ai-cta-box p {
+  margin-bottom: 15px;
+}
+
+
+
+  </style>
+</head>
+
+<body> 
+
+<div id="page-categories" class="page">
+
+  
+  <div class="page-header">
+    <div class="page-header-inner"> 
+      <h1>Animal Categories 🌟</h1>
+      <p>Explore Our Three Main Kingdoms</p>
+    </div>
+  </div>
+
+  
+  <div class="page-content"> 
+
+    <div class="cool-cards">
+
+      
+      <div class="cool-card" onclick="navigate('reptiles')">
+        <div class="cool-card-emoji">🦎</div>
+        <div class="cool-count-badge">6 animals</div>
+        <h2 class="cool-card-title">Reptiles</h2>
+        <p class="cool-desc">
+          Cold-blooded animals with scales from gentle corn snakes to impressive iguanas.
+        </p>
+        <button>Explore ➜</button>
+      </div>
+
+      
+      <div class="cool-card" onclick="navigate('birds')">
+        <div class="cool-card-emoji">🦜</div>
+        <div class="cool-count-badge">4 Animals</div>
+        <h2 class="cool-card-title">Birds</h2>
+        <p class="cool-desc">
+          Intelligent and social animals like parrots and cockatiels. Great companions.
+        </p>
+        <button>Explore ➜</button>
+      </div>
+
+      
+      <div class="cool-card" onclick="navigate('mammals')">
+        <div class="cool-card-emoji">🐾</div>
+        <div class="cool-count-badge">4 Animals</div>
+        <h2 class="cool-card-title">Mammals</h2>
+        <p class="cool-desc">
+          Warm-blooded pets like rabbits and ferrets. Friendly and easy to bond with.
+        </p>
+        <button>Explore ➜</button>
+      </div>
+
+    </div>
+
+   
+    <div class="ai-cta-box">
+      <h2>🤖 Not sure which to pick?</h2>
+      <p>
+        Take our AI quiz and get a personalized recommendation based on your lifestyle.
+      </p>
+      <button onclick="navigate('ai')">
+        Start AI Quiz →
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

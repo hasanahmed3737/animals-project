@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ai.css">
+    <script src="../js/ai.js" defer></script>
+    <title>WildKeep AI Assistant</title>
+</head>
+<body>
+    <div id="page-ai" class="page">
+        <div style="padding-top:68px;background:#faf6f0;min-height:100vh">
+            <div class="ai-header">
+                <div class="ai-header-inner">
+                    <div class="ai-header-icon">🤖</div>
+                    <h1>WildKeep AI Assistant</h1>
+                    <p>Get personalized animal recommendations or ask anything about exotic pets</p>
+                </div>
+            </div>
+
+            <!-- Choose mode -->
+            <div id="ai-section-choose" class="ai-choose visible">
+                <div onclick="setAIMode('quiz')" class="ai-choose-card">
+                    <div class="ai-choose-icon">📋</div>
+                    <h2>Animal Quiz</h2>
+                    <p>Answer 5 questions and get your perfect animal match!</p>
+                </div>
+            </div>
+
+            <!-- Quiz -->
+            <div id="ai-section-quiz" class="quiz-wrap">
+                <div class="quiz-card">
+                    <div class="quiz-progress-header">
+                        <span id="quiz-step-label">Question 1 of 5</span>
+                        <span id="quiz-pct-label">0% done</span>
+                    </div>
+                    <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-progress-fill" style="width:0%"></div></div>
+                    <h2 class="quiz-question" id="quiz-question-text"></h2>
+                    <div class="quiz-options" id="quiz-options"></div>
+                    <button class="btn-quiz-back" onclick="resetQuiz()">← Start over</button>
+                </div>
+            </div>
+
+            <!-- Result -->
+            <div id="ai-section-result" class="result-wrap">
+                <div class="result-card">
+                    <div class="result-icon">🎉</div>
+                    <h2 class="result-title">Your Perfect Match!</h2>
+                    <p class="result-sub">Based on your answers, we recommend:</p>
+                    <div class="result-animal">
+                        <div class="result-animal-emoji" id="result-emoji"></div>
+                        <div class="result-animal-name" id="result-name"></div>
+                        <div id="result-stars"></div>
+                        <p class="result-animal-desc" id="result-desc"></p>
+                    </div>
+                    <div class="result-btns">
+                        <button class="btn-result-view" id="result-view-btn">View Details</button>
+                        <button class="btn-result-retake" onclick="resetQuiz()">Retake Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

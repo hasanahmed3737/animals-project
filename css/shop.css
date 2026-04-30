@@ -1,0 +1,84 @@
+body {
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+                font-family: sans-serif;
+            }
+main {
+    width: 100%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+                align-items: center;
+}
+
+            section {
+                display: flex;
+                flex-wrap: wrap; 
+                gap: 20px; 
+                justify-content: center;
+                max-width: 1200px;
+            }
+
+            div {
+                width: 220px; 
+                background-color: aliceblue;
+                border: 3px solid green;
+                border-radius: 10px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
+                text-align: center;
+                transition: 0.3s;
+            }
+
+            div:hover {
+                box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            }
+
+         
+            .animal-icon {
+                font-size: 80px; 
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            div p {
+                margin: 5px 0;
+            }
+
+            span {
+                display: block;
+                font-size: 14px;
+                background-color: #e0e0e0;
+                font-style: italic;
+                padding: 5px 10px;
+                border-radius: 5px;
+                margin: 10px 0;
+            }
+
+            .input {
+                cursor: pointer;
+                background-color: white;
+                border: 2px solid black;
+                border-radius: 5px;
+                padding: 5px 20px;
+                transition: 0.5s;
+            }
+
+            .input:hover {
+                background-color: lightgreen;
+                transform: scale(1.1);
+            }
+            #search {
+                Display:Block;
+                Margin-bottom:100px;
+                border-radius:3px;
+                Border:2px solid black;
+                width: 30%;
+            }
+            #search:hover{
+                border-color: green;
+                transform: scale(107%);
+            }

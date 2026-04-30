@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop | Orders</title>
+    <link rel="stylesheet" href="form.css"> 
+</head>
+<body>
+
+    <div class="form-container" id="formContainer">
+        <button id="langBtn" class="lang-switch">Switch to Arabic</button>
+        
+        <h2 id="formTitle">Order Registration</h2>
+        <form action="#" method="POST">
+            <label for="name" id="labelName">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label id="labelPhone">Phone Number</label>
+            <div class="phone-group">
+                <select id="countryCode">
+                    <option value="+20">+20 (EG)</option>
+                    <option value="+966">+966 (SA)</option>
+                    <option value="+971">+971 (AE)</option>
+                    <option value="+33">+33 (FR)</option>
+                    <option value="+39">+39 (IT)</option>
+                    <option value="+49">+49 (DE)</option>
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+            </div>
+
+            <label for="email" id="labelEmail">Gmail Address</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="date" id="labelDate">Preferred Delivery Date</label>
+            <input type="text" id="date" name="date" placeholder="Select delivery date" 
+                   onfocus="(this.type='date')" 
+                   onblur="(this.value=='' ? this.type='text' : this.type='date')" required>
+
+            <label for="country" id="labelCountry">Country</label>
+            <select id="country" name="country">
+                <option value="" disabled selected id="optSelect">Select your country</option>
+                <option value="egypt" id="optEgypt">Egypt</option>
+                <option value="saudi" id="optSaudi">Saudi Arabia</option>
+                <option value="uae" id="optUAE">UAE</option>
+                <option value="france" id="optFrance">France</option>
+                <option value="italy" id="optItaly">Italy</option>
+                <option value="germany" id="optGermany">Germany</option>
+                <option value="other" id="optOther">Other</option>
+            </select>
+
+            <label for="notes" id="labelNotes">Notes</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Any special requests?"></textarea>
+
+            <button type="submit" id="submitBtn">Confirm Order</button>
+        </form>
+    </div>
+
+    <script src="./script.js">defer</script>
+</body>
+  </html> 

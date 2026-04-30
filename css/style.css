@@ -1,0 +1,83 @@
+footer {
+    background: #1a2e1c;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 48px 5vw 24px;
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+
+.footer-brand-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-tagline {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 12px;
+    font-size: 15px;
+    text-transform: uppercase; 
+}
+
+
+.footer-link {
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 8px;
+    text-transform: uppercase; 
+}
+
+.footer-link:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 12px;
+} 
+.NON-LOGO-ICON {
+  display: inline-block;
+  background-color: #d4f86d;
+  padding: 8px;
+  border-radius: 10px;
+  margin-right: 10px;
+  line-height: 1;
+  vertical-align: middle;
+}
+.social-icons {
+    display: flex;
+    
+    align-items: center;
+    gap: 12px; 
+    padding: 10px;
+}
+
+.social-icons img {
+    width: 28px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); 
+}

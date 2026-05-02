@@ -4,10 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Extinct Animals</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/extinct.css">
+  <link rel="stylesheet" href="../css/Header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <script src="../js/Header.js" defer></script>
 </head>
 <body>
-
+    <div id="navbar" class="header-wrapper">
+        <div class="heading">
+            <img src="../images/logo.jpg" alt="icon" class="icon">
+            <h2>WildKeep</h2>
+        </div>
+        
+        <div class="navdiv">
+            <nav class="nav-container">
+                <a href="index.html" class="nav-link" data-en="Home" data-ar="الرئيسيه">Home</a>
+                <a href="shop.html" class="nav-link" data-en="Shop" data-ar="المتجر" >Shop</a>
+                <a href="categories.html"class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
+                <a href="extinct.html"class="nav-link" data-en="Extinct" data-ar="منقرضه">Extinct</a>
+                <a href="endangered.html" class="nav-link" data-en="Endangered" data-ar="مهدده بالأنقراض" >Endangered</a>
+                <a href="ai.html"class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
+                <a href="index.html" class="nav-link" data-en="Index" data-ar="الفهرس">Index</a>
+                <a href="form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
+                
+                <button id="lang-btn" class="control-btn"> العرببة</button>
+                <button id="theme-btn" class="control-btn">🌙</button>
+            </nav>
+        </div>
+    </div>
   <div class="hero">
     <h1>Extinct Animals 💀</h1>
     <p>Species lost forever — their stories must be remembered</p>
@@ -46,13 +70,60 @@
 
         <div class="cause"><span>⚠ Cause of Extinction:</span> Hunting & habitat loss</div>
       </div>
-
-      <!-- Repeat cards exactly like before -->
-      <!-- (Keep your other animals here unchanged) -->
-
     </div>
   </div>
+  <footer id="main-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <p class="NON-LOGO-ICON">🐊</p>
+          <span class="footer-brand-text">WILDKEEP</span>
+          <p class="brand-description">
+            YOUR TRUSTED PLATFORM FOR EXOTIC PETS — EDUCATIONAL — AND WILDLIFE CONSERVATION AWARENESS.
+          </p>
+        </div>
 
-  <script src="script.js"></script>
+        <div class="footer-col">
+          <h4>ANIMALS</h4>
+          <div class="footer-link" onclick="navigate('REPTILES')">REPTILES</div>
+          <div class="footer-link" onclick="navigate('BIRDS')">BIRDS</div>
+          <div class="footer-link" onclick="navigate('MAMMALS')">MAMMALS</div>
+        </div>
+
+        <div class="footer-col">
+          <h4>LEARN</h4>
+          <div class="footer-link" onclick="navigate('EXTINCT')">EXTINCT</div>
+          <div class="footer-link" onclick="navigate('ENDANGERED')">ENDANGERED</div>
+        </div>
+
+        <div class="footer-col">
+          <h4>CONTACT</h4>
+          <div style="font-size:14px; margin-bottom:10px">🔳 HELLO@WILDKEEP.COM</div>
+          <div style="font-size:14px; margin-bottom:10px">📞 +1 (555) 123-4567</div>
+          <div style="font-size:15px">CAIRO, EGYPT</div>
+            <div class="social-icons">
+    <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"></a>
+    
+    <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="IG"></a>
+    
+    <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter--v1.png" alt="TW"></a>
+
+    <a href="https://wa.me/201234567890" target="_blank"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WA"></a>
+
+    <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LI"></a>
+
+    <a href="https://snapchat.com" target="_blank"><img src="https://img.icons8.com/color/48/snapchat--v1.png" alt="SC"></a>
+            </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 WILDKEEP. ALL RIGHTS RESERVED. BUILT WITH CARE FOR WILDLIFE 🌿.
+      </div>
+
+    </div>
+  </footer>
 </body>
 </html>

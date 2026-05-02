@@ -9,6 +9,7 @@ body {
   background: linear-gradient(135deg, #1f3d3a, #2e5f5a);
   color: white;
   padding: 40px 20px 80px;
+  margin-top: 55px;
 }
 
 .hero h1 {

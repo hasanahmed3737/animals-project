@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Fjalla+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika:wght@300..700&family=Sora:wght@100..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Supermercado+One&display=swap');
+
+    body {
+        background:#1a1a1a;
+    }
+
+    h1 {
+        color: aliceblue;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+    }
+
+    th {
+        border: none;
+        border-collapse: collapse;
+        outline: none;
+        background-color: #1a2e1c;
+        width: 30%;
+        white-space: nowrap;
+        padding: 30px;
+        color: #ffffff;
+    }
+
+    td {
+        color: #ffffff;
+        padding-left: 30px;
+        background-color: #252525;
+        font-family: "Reem Kufi", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 18px;
+    }
+    .endangered {
+        background-color: #f57c00;
+    }
+
+    .vulnerable {
+        background-color: #fbc02d;
+    }
+
+    .criendg {
+        background-color: #d32f2f;
+    }
+
+    .least {
+        background-color: #388e3c;
+    }
+
+    .near {
+        background-color: gray;
+    }
+
+    .pill {
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 50px;
+    }

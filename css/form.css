@@ -1,0 +1,82 @@
+.form-container {
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    border-top: 10px solid #064e3b;
+}
+
+.lang-switch {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #064e3b;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+.lang-switch:hover { background-color: #166534; }
+
+h2 { color: #064e3b; text-align: center; margin-bottom: 25px; }
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    color: #1a2e1a;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.phone-group {
+    display: flex;
+    gap: 10px;
+}
+
+#countryCode {
+    width: 90px;
+}
+
+#phone {
+    flex: 1;
+    width: 100%;
+}
+
+textarea { resize: vertical; }
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #064e3b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover { background-color: #043a2c; }
+
+.rtl { direction: rtl; text-align: right; }
+.rtl .lang-switch { right: auto; left: 15px; }
+.rtl .phone-group { flex-direction: row; }

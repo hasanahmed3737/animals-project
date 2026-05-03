@@ -15,29 +15,40 @@
     <script src="js/index.js" defer></script>
     <script src="js/Header.js" defer></script>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildKeep Header</title>
+    <link rel="stylesheet" href="../css/Header.css">
+    <script src="../js/Header.js" defer></script>
+</head>
 <body>
     <div id="navbar" class="header-wrapper">
         <div class="heading">
             <img src="images/logo.jpg" alt="icon" class="icon">
             <h2>WildKeep</h2>
         </div>
-    
+        
         <div class="navdiv">
             <nav class="nav-container">
                 <a href="index.html" class="nav-link" data-en="Home" data-ar="الرئيسيه">Home</a>
-                <a href="Html/shop.html" class="nav-link" data-en="Shop" data-ar="المتجر">Shop</a>
-                <a href="Html/categories.html" class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
-                <a href="Html/extinct.html" class="nav-link" data-en="Extinct" data-ar="منقرضه">Extinct</a>
-                <a href="Html/endangered.html" class="nav-link" data-en="Endangered" data-ar="مهدده بالأنقراض">Endangered</a>
-                <a href="Html/ai.html" class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
-                <a href="Html/main.html" class="nav-link" data-en="Index" data-ar="الفهرس">Index</a>
-                <a href="Html/form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
-    
+                <a href="html/shop.html" class="nav-link" data-en="Shop" data-ar="المتجر" >Shop</a>
+                <a href="html/categories.html"class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
+                <a href="html/extinct.html"class="nav-link" data-en="Extinct" data-ar="منقرضه">Extinct</a>
+                <a href="html/endangered.html" class="nav-link" data-en="Endangered" data-ar="مهدده بالأنقراض" >Endangered</a>
+                <a href="html/ai.html"class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
+                <a href="html/main.html" class="nav-link" data-en="Index" data-ar="الفهرس">Index</a>
+                <a href="html/form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
+                <a href="Html/login.html" class="nav-link" data-en="Login"  data-ar="تسجيل دخول"> Login</a> 
                 <button id="lang-btn" class="control-btn"> العربية</button>
                 <button id="theme-btn" class="control-btn">🌙</button>
             </nav>
         </div>
     </div>
+
+
+</body>
+</html>
 
     <section class="hero">
         <div class="hero-bg-leaf">🌿</div>
@@ -51,7 +62,10 @@
 
                 <div class="hero-btns">
                     <button class="btn-accent">Browse Animals →</button>
-                    <button class="btn-glass">🤖 AI Assistant</button>
+                    <button class="btn-glass">🤖
+                        <a href="Html/ai.html" class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
+                    </button>
+
                 </div>
             </div>
 

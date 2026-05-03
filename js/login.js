@@ -14,4 +14,3 @@
             e.preventDefault();
             window.location.href = 'animals.html';
         });
-    

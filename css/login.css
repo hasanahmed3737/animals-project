@@ -1,0 +1,255 @@
+/* إعدادات الخطوط والخلفية العامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eef2f5;
+    /* لون خلفية الصفحة */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* الحاوية الرئيسية (الكارت الأبيض) */
+.main-container {
+    background-color: #fff;
+    width: 1000px;
+    max-width: 95%;
+    height: 600px;
+    display: flex;
+    border-radius: 40px;
+    /* الحواف المنحنية الموجودة في الصورة */
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(2, 136, 238, 0.919);
+}
+
+/* الجزء الأيسر (الصورة والترحيب) */
+.welcome-section {
+    flex: 1.1;
+    background-image: url('https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2043&auto=format&fit=crop');
+    /* استبدلها بصورة القطة الخاصة بك */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* طبقة تظليل خفيفة فوق الصورة لجعل النص واضحاً */
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* الجزء الأيمن (نموذج تسجيل الدخول) */
+.login-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 380px;
+}
+
+.login-box h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* تنسيق الحقول */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group h3 {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #fcfcfc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #0d2558;
+}
+
+/* حاوية الباسورد والأيقونة */
+.password-input-container {
+    position: relative;
+}
+
+.eye-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+}
+
+.hidden {
+    display: none;
+}
+
+/* روابط نسيان كلمة السر */
+.forgot-link {
+    display: block;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #888;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+/* الأزرار */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #0d2558;
+    /* نفس اللون الكحلي في الصورة */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #1a3a7e;
+    transform: translateY(-2px);
+}
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #bbb;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+.google-btn-outlined {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #555;
+    transition: 0.3s;
+}
+
+.google-btn-outlined:hover {
+    background-color: #f9f9f9;
+}
+
+/* نص التسجيل الجديد */
+.signup-text {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.signup-text a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Media Query للهواتف والشاشات الصغيرة */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        /* مسافة بسيطة حول الكارت في الموبايل */
+        height: auto;
+        /* السماح للصفحة بالطول حسب المحتوى */
+        align-items: flex-start;
+    }
+
+    .main-container {
+        flex-direction: column;
+        /* ترتيب العناصر تحت بعض بدل جنب بعض */
+        height: auto;
+        /* الارتفاع يتحدد حسب المحتوى */
+        width: 100%;
+        border-radius: 20px;
+        /* تصغير الانحناء ليناسب الموبايل */
+    }
+
+    .welcome-section {
+        height: 250px;
+        /* تحديد ارتفاع ثابت للصورة في الموبايل */
+        flex: none;
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+        /* تصغير الخط ليناسب الشاشة */
+    }
+
+    .login-section {
+        padding: 30px 20px;
+        /* تقليل المسافات الداخلية */
+    }
+
+    .login-box h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        /* توسيط العنوان */
+        margin-bottom: 20px;
+    }
+}

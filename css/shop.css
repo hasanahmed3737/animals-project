@@ -1,5 +1,7 @@
 body {
-    background-color: #3d6b41;
+    background-image: url(../images/back-ground-shop.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     font-family: sans-serif;
 }
@@ -74,12 +76,26 @@ section {
 }
 #search {
     Display:Block;
-    Margin-bottom:80px;
+    Margin-bottom:50px;
     border-radius:3px;
     Border:2px solid black;
-    width: 30%;
+    width: 40%;
+    height: 20px;
 }
 #search:hover{
     border-color: #FFBF00;
     transform: scale(107%);
+}
+.p-shop{
+    display: block;
+    width: 50%;
+    margin-bottom:50px;
+    font-family: georgia,serif;
+    position: relative;
+    font-size: 80px;
+    font-weight: bold;
+    color: #d25816;
+    justify-content: left;
+    margin-top: 20px;
+
 }

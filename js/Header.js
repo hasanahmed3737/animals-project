@@ -10,6 +10,8 @@ themeBtn.addEventListener('click', () => {
 langBtn.addEventListener('click', () => {
     const isArabic = langBtn.innerText === 'English';
     const lang = isArabic ? 'en' : 'ar';
+    
+    localStorage.setItem('selectedLang', lang);
 
     navLinks.forEach(link => {
         link.innerText = link.getAttribute(`data-${lang}`);

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Animal World</title>
+    <link rel="stylesheet" href="loge in.css">
+    <script src="./js/logein.js"></script>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="welcome-section">
+            <div class="content">
+                <h1>Welcome Back!</h1>
+                <p>Login to explore the wonders of the animal kingdom</p>
+            </div>
+        </div>
+
+        <div class="login-section">
+            <div class="login-box">
+                <h1>Sign In</h1>
+
+                <form id="loginForm">
+                    <div class="input-group">
+                        <h3>Email Address</h3>
+                        <input type="email" id="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <h3>Password</h3>
+                        <div class="password-input-container">
+                            <input type="password" id="password" placeholder="**********" required>
+                            <button type="button" class="eye-btn" id="togglePassword">
+                                <svg id="eye-closed" class="eye-icon" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                                    </path>
+                                    <line x1="1" y1="1" x2="23" y2="23"></line>
+                                </svg>
+                                <svg id="eye-open" class="eye-icon hidden" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <a href="#" class="forgot-link">Forgot password?</a>
+
+                    <button type="submit" class="login-btn">Login</button>
+
+                    <div class="divider">or</div>
+
+                    <button type="button" class="google-btn-outlined">
+                        <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google"
+                            width="18">
+                        <span>Sign in with Google</span>
+                    </button>
+
+                    <p class="signup-text">Are you new? <a href="#">Create an Account</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

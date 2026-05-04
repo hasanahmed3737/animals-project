@@ -54,6 +54,7 @@ footer {
     margin-bottom: 8px;
     text-transform: uppercase; 
     transition: 0.3s;
+    text-decoration:none;
 }
 
 .footer-link:hover {

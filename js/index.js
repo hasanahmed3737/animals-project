@@ -1,6 +1,5 @@
-
 // ============================
-// 1. تأثير Smooth Scroll للأزرار
+// 1. تأثير الضغط على الأزرار
 // ============================
 document.querySelectorAll('button').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -11,6 +10,7 @@ document.querySelectorAll('button').forEach(btn => {
         }, 150);
     });
 });
+
 
 // ============================
 // 2. ظهور العناصر عند التمرير
@@ -34,8 +34,9 @@ revealElements.forEach(el => {
     revealObserver.observe(el);
 });
 
+
 // ============================
-// 3. عداد متحرك للأرقام
+// 3. عداد الأرقام
 // ============================
 const counters = document.querySelectorAll('.stat-number');
 
@@ -71,23 +72,28 @@ const statsObserver = new IntersectionObserver((entries) => {
     });
 });
 
-statsObserver.observe(statsSection);
+// ✅ حل المشكلة هنا
+if (statsSection) {
+    statsObserver.observe(statsSection);
+}
+
 
 // ============================
-// 4. تأثير Parallax للخلفية
+// 4. تأثير Parallax
 // ============================
 window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
-
     const leaf = document.querySelector('.hero-bg-leaf');
 
     if (leaf) {
-        leaf.style.transform = `translateY(${scrollY * 0.25}px) rotate(${scrollY * 0.05}deg)`;
+        leaf.style.transform =
+            `translateY(${scrollY * 0.25}px) rotate(${scrollY * 0.05}deg)`;
     }
 });
 
+
 // ============================
-// 5. تأثير احترافي للكروت
+// 5. تأثير الكروت
 // ============================
 const cards = document.querySelectorAll('.animal-card');
 
@@ -112,19 +118,35 @@ cards.forEach(card => {
         card.style.transform = 'translateY(-10px)';
     });
 });
+
+
+// ============================
+// 6. Dark Mode + Language (بعد الإصلاح)
+// ============================
 const themeBtn = document.getElementById('theme-btn');
 const langBtn = document.getElementById('lang-btn');
 const navLinks = document.querySelectorAll('.nav-link');
-themeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    themeBtn.innerText = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-});
 
-langBtn.addEventListener('click', () => {
-    const isArabic = langBtn.innerText === 'English';
-    navLinks.forEach(link => {
-        link.innerText = isArabic ? link.getAttribute('data-en') : link.getAttribute('data-ar');
+// ✅ منع الـ Errors
+if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        themeBtn.innerText =
+            document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
     });
-    document.body.dir = isArabic ? 'ltr' : 'rtl';
-    langBtn.innerText = isArabic ? 'العربية' : 'English';
-});
+}
+
+if (langBtn) {
+    langBtn.addEventListener('click', () => {
+        const isArabic = langBtn.innerText === 'English';
+
+        navLinks.forEach(link => {
+            link.innerText = isArabic
+                ? link.getAttribute('data-en')
+                : link.getAttribute('data-ar');
+        });
+
+        document.body.dir = isArabic ? 'ltr' : 'rtl';
+        langBtn.innerText = isArabic ? 'العربية' : 'English';
+    });
+}

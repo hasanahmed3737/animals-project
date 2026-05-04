@@ -246,9 +246,13 @@
       }
 
       .world-icon {
-          font-size: 50px;
-          margin-bottom: 20px;
-      }
+         font-size: 40px;
+         display: inline-block;
+        animation: rotateEarth 12s linear infinite;
+}
+ @keyframes rotateEarth {
+            from { transform: rotate(6deg); }
+            to { transform: rotate(360deg); }}
 
       .conservation h2 {
           font-family: 'Playfair Display', serif;

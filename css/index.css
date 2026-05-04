@@ -851,4 +851,26 @@
                           height: 20px;
                       }
                   }
-                  
+                                  /* =========================
+                   THEME SYSTEM FINAL FIX
+                ========================= */
+                
+                                  body[data-theme="light"] {
+                                      background: #f9f7f2;
+                                      color: #1a2e1c;
+                                  }
+                
+                                  body[data-theme="dark"] {
+                                      background: #0f1410;
+                                      color: #eaeaea;
+                                  }
+                
+                                  body[data-theme="nature"] {
+                                      background: #e8f5e9;
+                                      color: #1b3a1b;
+                                  }
+                
+                                  /* smooth transition */
+                                  body {
+                                      transition: all 0.4s ease;
+                                  }

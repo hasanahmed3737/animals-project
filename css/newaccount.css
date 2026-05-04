@@ -4,8 +4,6 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
-/* ===== BODY ===== */
 body {
     background: #f6f6f6;
     display: flex;
@@ -13,12 +11,8 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-
-    /* مهم عشان الهيدر ما يغطيش الصفحة */
     padding-top: 80px;
 }
-
-/* ===== CONTAINER ===== */
 .container {
     width: 1000px;
     height: auto;
@@ -29,15 +23,12 @@ body {
     display: flex;
     box-shadow: 0 15px 40px rgba(6, 168, 238, 0.79);
 }
-
-/* ===== FORM SECTION ===== */
 .form-section {
     width: 45%;
     padding: 40px;
     display: flex;
     flex-direction: column;
 }
-
 .logo {
     width: fit-content;
     padding: 10px 18px;
@@ -46,24 +37,20 @@ body {
     font-size: 14px;
     margin-bottom: 40px;
 }
-
 .form-box {
     max-width: 350px;
     margin: auto;
     width: 100%;
 }
-
 .form-box h1 {
     font-size: 36px;
     margin-bottom: 10px;
     color: #222;
 }
-
 .form-box p {
     color: #777;
     margin-bottom: 30px;
 }
-
 form {
     display: flex;
     flex-direction: column;
@@ -106,8 +93,6 @@ button[type="submit"]:hover {
     background: rgb(255, 172, 47);
     color: #000;
 }
-
-/* ===== SOCIAL ===== */
 .social-login {
     display: flex;
     gap: 15px;
@@ -143,7 +128,6 @@ button[type="submit"]:hover {
     border-radius: 5px;
 }
 
-/* ===== IMAGE ===== */
 .image-section {
     width: 55%;
     overflow: hidden;
@@ -155,7 +139,6 @@ button[type="submit"]:hover {
     object-fit: cover;
 }
 
-/* ===== PHONE ===== */
 .phone-group {
     display: flex;
     gap: 10px;
@@ -174,8 +157,6 @@ button[type="submit"]:hover {
     flex: 1;
     margin-bottom: 0;
 }
-
-/* ===== HEADER ===== */
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
 
 .header-wrapper {
@@ -234,7 +215,6 @@ a:hover {
     background-color: #3d6b41;
 }
 
-/* ===== SCROLLED HEADER ===== */
 .header-wrapper.scrolled {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -245,7 +225,6 @@ a:hover {
     color: #1a2e1c !important;
 }
 
-/* ===== DARK MODE ===== */
 body.dark-mode {
     background-color: #1a1a1a !important;
     color: white !important;
@@ -255,7 +234,6 @@ body.dark-mode .header-wrapper {
     background-color: #252525 !important;
 }
 
-/* ===== BUTTONS ===== */
 .control-btn {
     background-color: #3d6b41;
     color: white;
@@ -266,7 +244,6 @@ body.dark-mode .header-wrapper {
     cursor: pointer;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 
     body {

@@ -1,23 +1,34 @@
 const searchInput = document.getElementById('search');
-const animals = document.querySelectorAll('.div-shop'); // استخدام الكلاس الخاص بك
+const animals = document.querySelectorAll('.div-shop');
 const params = new URLSearchParams(window.location.search);
 const selectedCategory = params.get("category")?.toLowerCase();
 
-// وظيفة التحكم في الظهور مع الحركة
+// وظيفة الحركة باستخدام البرمجة مباشرة
+function playFadeAnimation(element) {
+    element.animate([
+        // الحالة البداية
+        { opacity: 0, transform: 'translateY(20px)' }, 
+        // الحالة النهائية
+        { opacity: 1, transform: 'translateY(0)' }
+    ], {
+        duration: 500, // نصف ثانية
+        easing: 'ease-out',
+        fill: 'forwards'
+    });
+}
+
 function displayAnimal(animal, shouldShow) {
     if (shouldShow) {
-        animal.style.display = "flex";
-        // إزالة الكلاس وإضافته مجدداً لإعادة تشغيل الحركة
-        animal.classList.remove('animate-card');
-        void animal.offsetWidth; // Force reflow لضمان إعادة تشغيل الأنميشن
-        animal.classList.add('animate-card');
+        if (animal.style.display !== "flex") { // إذا كان مخفي وسيظهر الآن
+            animal.style.display = "flex";
+            playFadeAnimation(animal); // تشغيل الحركة
+        }
     } else {
         animal.style.display = "none";
-        animal.classList.remove('animate-card');
     }
 }
 
-// الفلترة عند تحميل الصفحة بناءً على القسم (Category)
+// الفلترة عند التحميل (April 2026 Project)
 animals.forEach(animal => {
     const cat = animal.getAttribute("data-category")?.toLowerCase();
     const matchesCategory = selectedCategory ? (cat === selectedCategory) : true;

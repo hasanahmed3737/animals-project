@@ -11,7 +11,6 @@
           overflow-x: hidden;
       }
 
-      /* 2. الـ Hero Section (الخلفية المتدرجة) */
       .hero {
           min-height: 100vh;
           background: linear-gradient(135deg, #2d5a27 0%, #1e3c1a 50%, #446e3d 100%);
@@ -23,7 +22,6 @@
           margin-top: 50px;
       }
 
-      /* ورقة الشجر الكبيرة في الخلفية */
       .hero-bg-leaf {
           position: absolute;
           top: -100px;
@@ -44,7 +42,6 @@
           z-index: 2;
       }
 
-      /* 3. الجزء الأيسر (النصوص) */
       .hero-content {
           flex: 1;
       }
@@ -69,7 +66,6 @@
 
       .hero-title span {
           color: #d2b48c;
-          /* اللون البيج المميز */
       }
 
       .hero-desc {
@@ -118,7 +114,6 @@
           background: rgba(255, 255, 255, 0.15);
       }
 
-      /* 4. الجزء الأيمن (شبكة الكروت) */
       .hero-grid {
           flex: 1;
           display: grid;
@@ -161,7 +156,6 @@
           opacity: 0.6;
       }
 
-      /* 5. تجاوب التصميم للموبايل */
       @media (max-width: 1024px) {
           .hero-inner {
               flex-direction: column;
@@ -189,10 +183,8 @@
 
       .stats-bar {
           background-color: #f2ede4;
-          /* اللون الكريمي الفاتح من الصورة */
           display: flex;
           justify-content: space-around;
-          /* توزيع العناصر بالتساوي */
           align-items: center;
           padding: 60px 10%;
           border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -204,11 +196,9 @@
 
       .stat-number {
           font-family: 'Playfair Display', serif;
-          /* خط عريض وكلاسيكي */
           font-size: 3rem;
           font-weight: 900;
           color: #2d5a27;
-          /* اللون الأخضر الغامق */
           margin-bottom: 5px;
           letter-spacing: -1px;
       }
@@ -217,16 +207,13 @@
           font-family: 'Inter', sans-serif;
           font-size: 1rem;
           color: #5c715e;
-          /* لون أخضر زيتوني باهت للنصوص الصغيرة */
           text-transform: capitalize;
           font-weight: 500;
       }
 
-      /* تجاوب التصميم مع الشاشات الصغيرة */
       @media (max-width: 768px) {
           .stats-bar {
               flex-direction: column;
-              /* العناصر تحت بعض في الموبايل */
               gap: 40px;
               padding: 40px 20px;
           }
@@ -236,10 +223,8 @@
           }
       }
 
-      /* --- بنر الحفاظ على البيئة --- */
       .conservation {
           background-color: #2d5a27;
-          /* اللون الأخضر الغامق من الصورة */
           padding: 80px 10%;
           text-align: center;
           color: white;
@@ -292,10 +277,8 @@
           backdrop-filter: blur(5px);
       }
 
-      /* --- الفوتر --- */
       .main-footer {
           background-color: #162618;
-          /* لون أغمق للفوتر */
           padding: 60px 10% 20px;
           color: white;
           border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -363,7 +346,6 @@
           opacity: 0.5;
       }
 
-      /* التجاوب مع الموبايل */
       @media (max-width: 768px) {
           .footer-grid {
               grid-template-columns: 1fr;
@@ -381,10 +363,8 @@
 
 
 
-      /* إعدادات القسم */
       .picks-section {
           background-color: #f9f7f2;
-          /* لون الخلفية الفاتح جداً */
           padding: 80px 10%;
           color: #1a2e1c;
       }
@@ -423,14 +403,12 @@
           color: white;
       }
 
-      /* شبكة الكروت */
       .picks-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
           gap: 25px;
       }
 
-      /* تصميم الكارت */
       .animal-card {
           background: white;
           border-radius: 25px;
@@ -450,7 +428,6 @@
           justify-content: center;
           align-items: center;
           font-size: 80px;
-          /* هنا تحط صور الحيوانات بدل الإيموجي */
       }
 
       .card-body {
@@ -490,7 +467,6 @@
           margin-bottom: 15px;
       }
 
-      /* التاجات */
       .card-tags {
           display: flex;
           gap: 8px;
@@ -529,7 +505,6 @@
           color: #be185d;
       }
 
-      /* فوتر الكارت */
       .card-footer {
           display: flex;
           justify-content: space-between;
@@ -566,7 +541,6 @@
     position: relative;
 }
 
-/* ديكور خفيف في الخلفية */
 .video-section::before {
     content: "🌿";
     position: absolute;
@@ -598,7 +572,6 @@
     line-height: 1.7;
 }
 
-/* الصندوق */
 .video-box {
     border-radius: 30px;
     overflow: hidden;
@@ -609,7 +582,6 @@
     transition: all 0.4s ease;
 }
 
-/* Hover احترافي */
 .video-box:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 
@@ -617,14 +589,12 @@
         0 0 40px rgba(45,90,39,0.2);
 }
 
-/* الفيديو نفسه */
 .video-box video {
     width: 100%;
     display: block;
     border-radius: 30px;
 }
 
-/* Overlay سينمائي */
 .video-box::after {
     content: "";
     position: absolute;
@@ -633,7 +603,6 @@
     pointer-events: none;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .video-title {
         font-size: 2rem;

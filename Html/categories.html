@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/Header.css">
   <link rel="stylesheet" href="../css/footer.css">
   <script src="../js/Header.js" defer></script>
- 
+  <script src="../js/footer.js" defer></script> 
 </head>
 
 <body> 
@@ -27,7 +27,7 @@
                 <a href="ai.html"class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
                 <a href="main.html" class="nav-link" data-en="Index" data-ar="الفهرس">Index</a>
                 <a href="form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
-                
+                <a href="login.html" class="nav-link" data-en="Login" data-ar="تسجيل دخول">Login</a>               
                 <button id="lang-btn" class="control-btn"> العربية</button>
                 <button id="theme-btn" class="control-btn">🌙</button>
             </nav>
@@ -48,37 +48,43 @@
     <div class="cool-cards">
 
       
-      <div class="cool-card" onclick="navigate('reptiles')">
-        <div class="cool-card-emoji">🦎</div>
-        <div class="cool-count-badge">6 animals</div>
-        <h2 class="cool-card-title">Reptiles</h2>
-        <p class="cool-desc">
-          Cold-blooded animals with scales from gentle corn snakes to impressive iguanas.
-        </p>
-        <button>Explore ➜</button>
-      </div>
+      <div class="cool-card">
+  <div class="cool-card-emoji">🦎</div>
+  <div class="cool-count-badge">6 animals</div>
+  <h2 class="cool-card-title">Reptiles</h2>
+  <p class="cool-desc">
+    Cold-blooded animals with scales from gentle corn snakes to impressive iguanas.
+  </p>
+  <a href="shop.html?category=reptiles">
+    <button>Explore ➜</button>
+  </a>
+</div>
 
       
-      <div class="cool-card" onclick="navigate('birds')">
-        <div class="cool-card-emoji">🦜</div>
-        <div class="cool-count-badge">4 Animals</div>
-        <h2 class="cool-card-title">Birds</h2>
-        <p class="cool-desc">
-          Intelligent and social animals like parrots and cockatiels. Great companions.
-        </p>
-        <button>Explore ➜</button>
-      </div>
+      <div class="cool-card">
+  <div class="cool-card-emoji">🦜</div>
+  <div class="cool-count-badge">4 Animals</div>
+  <h2 class="cool-card-title">Birds</h2>
+  <p class="cool-desc">
+    Intelligent and social animals like parrots and cockatiels.
+  </p>
+  <a href="shop.html?category=birds">
+    <button>Explore →</button>
+  </a>
+</div>
 
       
-      <div class="cool-card" onclick="navigate('mammals')">
-        <div class="cool-card-emoji">🐾</div>
-        <div class="cool-count-badge">4 Animals</div>
-        <h2 class="cool-card-title">Mammals</h2>
-        <p class="cool-desc">
-          Warm-blooded pets like rabbits and ferrets. Friendly and easy to bond with.
-        </p>
-        <button>Explore ➜</button>
-      </div>
+     <div class="cool-card">
+  <div class="cool-card-emoji">🐾</div>
+  <div class="cool-count-badge">4 Animals</div>
+  <h2 class="cool-card-title">Mammals</h2>
+  <p class="cool-desc">
+    Warm-blooded pets like rabbits and ferrets.
+  </p>
+  <a href="shop.html?category=mammals">
+    <button>Explore →</button>
+  </a>
+</div>
 
     </div>
 
@@ -88,9 +94,10 @@
       <p>
         Take our AI quiz and get a personalized recommendation based on your lifestyle.
       </p>
-      <button onclick="navigate('ai')">
-        Start AI Quiz →
-      </button>
+      <a href="ai.html">
+  <button>Start AI Quiz →</button>
+</a>
+       
     </div>
 
   </div>

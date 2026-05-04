@@ -2,6 +2,7 @@ footer {
     background: #1a2e1c;
     color: rgba(255, 255, 255, 0.7);
     padding: 48px 5vw 24px;
+    font-family: sans-serif;
 }
 
 .footer-inner {
@@ -16,7 +17,6 @@ footer {
     margin-bottom: 40px;
 }
 
-
 .footer-brand-text {
     font-family: 'Fraunces', serif;
     font-weight: 800;
@@ -24,9 +24,20 @@ footer {
     color: #fff;
 }
 
-.footer-tagline {
+.brand-description {
     font-size: 13px;
     line-height: 1.8;
+    margin-top: 15px;
+}
+
+.NON-LOGO-ICON {
+    display: inline-block;
+    background-color: #d4f86d;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 10px;
+    line-height: 1;
+    vertical-align: middle;
 }
 
 .footer-col h4 {
@@ -37,16 +48,33 @@ footer {
     text-transform: uppercase; 
 }
 
-
 .footer-link {
     cursor: pointer;
     font-size: 13px;
     margin-bottom: 8px;
     text-transform: uppercase; 
+    transition: 0.3s;
 }
 
 .footer-link:hover {
     color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    padding: 10px 0;
+}
+
+.social-icons img {
+    width: 28px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
 }
 
 .footer-bottom {
@@ -54,30 +82,29 @@ footer {
     padding-top: 20px;
     text-align: center;
     font-size: 12px;
-} 
-.NON-LOGO-ICON {
-  display: inline-block;
-  background-color: #d4f86d;
-  padding: 8px;
-  border-radius: 10px;
-  margin-right: 10px;
-  line-height: 1;
-  vertical-align: middle;
 }
-.social-icons {
-    display: flex;
+
+body[dir="rtl"] footer {
+    direction: rtl;
+    text-align: right;
+}
+
+body[dir="rtl"] .NON-LOGO-ICON {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+body[dir="rtl"] .social-icons {
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
     
-    align-items: center;
-    gap: 12px; 
-    padding: 10px;
-}
-
-.social-icons img {
-    width: 28px;
-    height: auto;
-    transition: 0.3s;
-}
-
-.social-icons img:hover {
-    transform: scale(1.2); 
+    body[dir="rtl"] .social-icons, .social-icons {
+        justify-content: center;
+    }
 }

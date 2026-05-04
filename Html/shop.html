@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,88 +9,147 @@
         <link rel="stylesheet" href="../css/Header.css">
         <link rel="stylesheet" href="../css/footer.css">      
         <link rel="script" href="../js/shop.js" defer>
+        <script src="../js/Header.js" defer></script>
+        <script src="../js/footer.js" defer></script>
     </head>
     <body>
+        <div id="navbar" class="header-wrapper">
+            <div class="heading">
+                <img src="../images/logo.jpg" alt="icon" class="icon">
+                <h2>WildKeep</h2>
+            </div>
+            
+            <div class="navdiv">
+                <nav class="nav-container">
+                    <a href="../index.html" class="nav-link" data-en="Home" data-ar="الرئيسيه">Home</a>
+                    <a href="shop.html" class="nav-link" data-en="Shop" data-ar="المتجر" >Shop</a>
+                    <a href="categories.html"class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
+                    <a href="extinct.html"class="nav-link" data-en="Extinct" data-ar="منقرضه">Extinct</a>
+                    <a href="endangered.html" class="nav-link" data-en="Endangered" data-ar="مهدده بالأنقراض" >Endangered</a>
+                    <a href="ai.html"class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
+                    <a href="main.html" class="nav-link" data-en="Index" data-ar="الفهرس">Index</a>
+                    <a href="form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
+                    <a href="login.html" class="nav-link" data-en="Login" data-ar="تسجيل دخول">Login</a>
+                    
+                    <button id="lang-btn" class="control-btn"> العربية</button>
+                    <button id="theme-btn" class="control-btn">🌙</button>
+                </nav>
+            </div>
+        </div>
         <main>
+            <h class="p-shop">WildKeep<sup>🐒🐾</sup></h>
             <input id="search" type="text" placeholder="search 🔍" > </input>
-            <section>
-                <div>
+          <section>
+                <div data-category="reptiles" class="div-shop">
                     <span class="animal-icon">🐠</span>
                     <p><strong>Fish</strong></p>
-                    <span>Price: <b>150 EGP</b></span>
+                    <span class="details">Price: <b>150 EGP</b></span>
                     <input class="input" type="submit" value="Buy">
                 </div>
 
-                <div>
+                <div data-category="reptiles" class="div-shop">
                     <span class="animal-icon">🐍</span>
                     <p><strong>Snake</strong></p>
-                    <span>Price: <b>100 EGP</b></span>
+                    <span  class="details">Price: <b>100 EGP</b></span>
                     <input class="input" type="submit" value="Buy">
                 </div>
 
-                <div>
+                <div data-category="birds" class="div-shop">
                     <span class="animal-icon">🦜</span>
                     <p><strong>Lovebird</strong></p>
-                    <span>Price: <b>200 EGP</b></span>
+                    <span class="details">Price: <b>200 EGP</b></span>
                     <input class="input" type="submit" value="Buy">
                 </div>
 
-                <div>
+                <div data-category="mammals" class="div-shop">
                     <span class="animal-icon">🐇</span>
                     <p><strong>Rabbit</strong></p>
-                    <span>Price: <b>75 EGP</b></span>
+                    <span class="details">Price: <b>75 EGP</b></span>
                     <input class="input" type="submit" value="Buy">
                 </div>
 
-                <div>
+                <div data-category="birds" class="div-shop">
                     <span class="animal-icon">🦤</span>
                     <p><strong>duck</strong></p>
-                    <span>Price: <b>250 EGP</b></span>
+                    <span class="details">Price: <b>250 EGP</b></span>
                     <input class="input" type="submit" value="Buy">
                 </div>
 
-                <div>
+                <div data-category="reptiles" class="div-shop">
                     <span class="animal-icon">🐢</span>
                     <p><strong>Turtle</strong></p>
-                    <span>Price: <b>500 EGP</b></span>
+                    <span class="details">Price: <b>500 EGP</b></span>
                     <input class="input" type="submit" value="Buy">
                 </div>
 
-                <div>
+                <div data-category="mammals" class="div-shop">
                     <span class="animal-icon">🦔</span>
                     <p><strong>Hedgehog</strong></p>
-                    <span>Price: <b>300 EGP</b></span>
+                    <span class="details">Price: <b>300 EGP</b></span>
                     <input class="input" type="submit" value="Buy">
                 </div>
 
-                <div>
+                <div data-category="mammals" class="div-shop">
                     <span class="animal-icon">🐕‍🦺</span>
                     <p><strong>dog</strong></p>
-                    <span>Price: <b>75 EGP</b></span>
+                    <span class="details">Price: <b>75 EGP</b></span>
                     <input class="input" type="submit" value="Buy">
                 </div>
-
             </section>
         </main>
-        <script>
-            const searchInput = document.getElementById('search');
-            const animals = document.querySelectorAll('section div');
+        <script src="../js/action-shop.js"> </script>
+        <footer id="main-footer">
+            <div class="footer-inner">
+            <div class="footer-grid">
+                
+                <div class="footer-brand">
+                <p class="NON-LOGO-ICON">🐊</p>
+                <span class="footer-brand-text">WILDKEEP</span>
+                <p class="brand-description">
+                    YOUR TRUSTED PLATFORM FOR EXOTIC PETS — EDUCATIONAL — AND WILDLIFE CONSERVATION AWARENESS.
+                </p>
+                </div>
 
-            searchInput.addEventListener('keyup', (e) => {
-                const term = e.target.value.toLowerCase();
+                <div class="footer-col">
+                    <h4>ANIMALS</h4>
+                    <div class="footer-link" onclick="navigate('REPTILES')">REPTILES</div>
+                    <div class="footer-link" onclick="navigate('BIRDS')">BIRDS</div>
+                    <div class="footer-link" onclick="navigate('MAMMALS')">MAMMALS</div>
+                    </div>
 
-                animals.forEach(animal => {
-                    const name = animal.querySelector('p').textContent.toLowerCase();
+                    <div class="footer-col">
+                    <h4>LEARN</h4>
+                    <div class="footer-link" onclick="navigate('EXTINCT')">EXTINCT</div>
+                    <div class="footer-link" onclick="navigate('ENDANGERED')">ENDANGERED</div>
+                </div>
 
-                    if (name.includes(term)) {
-                        animal.style.display = 'flex';
-                    } else {
-                        animal.style.display = 'none';
-                    }
-                });
-            });
-        </script>
-        <br><br><br><br><br><br><br><br><br><br><br>
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <div style="font-size:14px; margin-bottom:10px">🔳 HELLO@WILDKEEP.COM</div>
+                    <div style="font-size:14px; margin-bottom:10px">📞 +1 (555) 123-4567</div>
+                    <div style="font-size:15px">CAIRO, EGYPT</div>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"></a>
+                        
+                        <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="IG"></a>
+                        
+                        <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter--v1.png" alt="TW"></a>
+
+                        <a href="https://wa.me/201234567890" target="_blank"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WA"></a>
+
+                        <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LI"></a>
+
+                        <a href="https://snapchat.com" target="_blank"><img src="https://img.icons8.com/color/48/snapchat--v1.png" alt="SC"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 WILDKEEP. ALL RIGHTS RESERVED. BUILT WITH CARE FOR WILDLIFE 🌿.
+            </div>
+            </div>
+        </footer>
         
     </body>
 </html>

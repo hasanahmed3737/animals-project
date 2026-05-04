@@ -6,7 +6,7 @@
         }
 
         body {
-            background-color: #1B261B;
+            background-color: #263a26;
         }
         header {
             background-color: #0a0a0a;
@@ -50,7 +50,7 @@
             border: 1px solid #eee;
 }
 .earth-icon {
-         font-size: 30px;
+         font-size: 40px;
          display: inline-block;
         animation: rotateEarth 12s linear infinite;
 }

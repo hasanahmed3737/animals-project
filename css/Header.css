@@ -87,8 +87,12 @@ body.dark-mode {
 
 body.dark-mode .header-wrapper {
     background-color: #252525 !important; 
-}
 
+}
+body.dark-mode td {
+    background-color: #252525 !important; 
+    color: white !important;
+}
 
 .control-btn {
     background-color: #3d6b41;

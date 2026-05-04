@@ -55,6 +55,7 @@ const translations = {
 let currentLang = 'en';
 
 langBtn.addEventListener('click', () => {
+    const isCurrentlyRTL = document.body.classList.contains('rtl')
     currentLang = currentLang === 'en' ? 'ar' : 'en';
     
     document.getElementById('formTitle').innerText = translations[currentLang].title;
@@ -83,8 +84,12 @@ langBtn.addEventListener('click', () => {
     document.getElementById('optOther').innerText = translations[currentLang].other;
 
     if(currentLang === 'ar') {
+        document.bodyclassList.add('rtl);
         formContainer.classList.add('rtl');
+       edocument.body.dir = 'rtl'
     } else {
+        document.body.classList.remove('rtl');
         formContainer.classList.remove('rtl');
+        document.body.dir = 'ltr';
     }
 });

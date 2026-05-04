@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="../css/newaccount.css">
+    
+</head>
+
+<body>
+<div id="navbar" class="header-wrapper">
+    <div class="heading">
+        <img src="../images/logo.jpg" alt="icon" class="icon">
+        <h2>WildKeep</h2>
+    </div>
+
+    <div class="navdiv">
+        <nav class="nav-container">
+            <a href="../index.html" class="nav-link" data-en="Home" data-ar="الرئيسيه">Home</a>
+            <a href="../shop.html" class="nav-link" data-en="Shop" data-ar="المتجر">Shop</a>
+            <a href="../categories.html" class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
+            <a href="../extinct.html" class="nav-link" data-en="Extinct" data-ar="منقرضه">Extinct</a>
+            <a href="../endangered.html" class="nav-link" data-en="Endangered" data-ar="مهدده بالأنقراض">Endangered</a>
+            <a href="../ai.html" class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
+            <a href="../main.html" class="nav-link" data-en="Index" data-ar="الفهرس">Index</a>
+            <a href="../form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
+            <a href="../login.html" class="nav-link" data-en="Login" data-ar="تسجيل دخول"> Login</a>
+
+
+            <button id="lang-btn" class="control-btn"> العربية</button>
+            <button id="theme-btn" class="control-btn">🌙</button>
+        </nav>
+    </div>
+</div>
+
+<br>
+    <div class="container">
+
+        <!-- Left Side -->
+        <div class="form-section">
+            <div class="form-box">
+                <h1>Create an account</h1>
+                <p>Sign up and get 30 day free trial</p>
+
+                <form>
+                    <label>Full name</label>
+                    <input type="text" placeholder="Amelie Laurent">
+                    <label>Phone</label>
+                    <div class="phone-group">
+                        <select class="country-code">
+                            <option value="+20">Egypt (+20)</option>
+                            <option value="+966">Saudi Arabia (+966)</option>
+                            <option value="+971">UAE (+971)</option>
+                            <option value="+1">USA (+1)</option>
+                        </select>
+
+                        <input type="tel" id="phone" name="phone" maxlength="11" pattern="\d{11}"
+                            placeholder="ادخل رقم تواصل" required>
+
+                    </div>
+                    <label>Email</label>
+                    <input type="email" placeholder="amelielaurent762@gmail.com">
+
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••••••">
+
+                    <label> Confirm Password</label>
+                    <input type="password" placeholder="••••••••••••">
+
+                    <button type="submit">Submit</button>
+                </form>
+                <br>
+
+                <div class="social-login">
+                    <a href="https://www.apple.com/eg/" class="social-btn"> Apple</a>
+                    <a href="https://www.google.com/" class="social-btn">Google</a>
+                </div>
+
+                <div class="bottom-text">
+                    <span>Have any account? <a href="./login.html">Sign in</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="image-section">
+            <img src="./images/WhatsApp Image 2026-04-29 at 2.23.12 AM.jpeg" alt="Team Meeting">
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+</body>
+
+</html>

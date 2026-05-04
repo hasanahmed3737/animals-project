@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Mirza:wght@400;500;600;700&display=swap');
 
 body {
     margin: 0;
@@ -114,6 +115,14 @@ body.dark-mode td {
     background-color: #3d6b41;
     color: white !important;
 }
+body.rtl,
+.rtl .nav-link,
+.rtl button{
+  font-family: "Cascadia Code", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 @media (max-width: 768px) {
     .header-wrapper{
       padding: 0 5px;

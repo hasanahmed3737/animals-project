@@ -12,6 +12,11 @@ langBtn.addEventListener('click', () => {
     const lang = isArabic ? 'en' : 'ar';
     
     localStorage.setItem('selectedLang', lang);
+    const allElements = document.quertSelectorAll('.nav-link,translate');
+    allElements.forEach(el => {
+        const text = el.getAttribute(`data–${lang}`);
+        if (text) el.innerText = text;
+    });
 
     navLinks.forEach(link => {
         link.innerText = link.getAttribute(`data-${lang}`);

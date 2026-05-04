@@ -559,37 +559,90 @@
           background: #1e3c1a;
       }
 
-      /* Video Section */
-      .video-section {
-          background: #f9f7f2;
-          padding: 100px 10%;
-          text-align: center;
-      }
+.video-section {
+    background: linear-gradient(to bottom, #f9f7f2, #eef3ea);
+    padding: 100px 10%;
+    text-align: center;
+    position: relative;
+}
 
-      .video-container {
-          max-width: 1000px;
-          margin: auto;
-      }
+/* ديكور خفيف في الخلفية */
+.video-section::before {
+    content: "🌿";
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.05;
+    top: 20px;
+    left: 5%;
+    pointer-events: none;
+}
 
-      .video-title {
-          font-family: 'Playfair Display', serif;
-          font-size: 2.8rem;
-          color: #1a2e1c;
-          margin-bottom: 15px;
-      }
+.video-container {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
 
-      .video-desc {
-          color: #666;
-          font-size: 1.1rem;
-          margin-bottom: 40px;
-          line-height: 1.7;
-      }
+.video-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #1a2e1c;
+    margin-bottom: 15px;
+}
 
-      .video-box {
-          border-radius: 30px;
-          overflow: hidden;
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-      }
+.video-desc {
+    color: #5c715e;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    line-height: 1.7;
+}
+
+/* الصندوق */
+.video-box {
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 
+        0 25px 60px rgba(0,0,0,0.15),
+        0 0 0 1px rgba(0,0,0,0.05);
+    transition: all 0.4s ease;
+}
+
+/* Hover احترافي */
+.video-box:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+        0 35px 80px rgba(0,0,0,0.25),
+        0 0 40px rgba(45,90,39,0.2);
+}
+
+/* الفيديو نفسه */
+.video-box video {
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+}
+
+/* Overlay سينمائي */
+.video-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.4), transparent 60%);
+    pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-title {
+        font-size: 2rem;
+    }
+
+    .video-box {
+        border-radius: 20px;
+    }
+}
 
       .video-box video {
           width: 100%;

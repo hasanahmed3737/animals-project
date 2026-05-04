@@ -95,9 +95,9 @@ section {
     transition: transform 0.3s ease;
 }
 
-.div-shop:hover .animal-icon {
+/* .div-shop:hover .animal-icon {
     transform: scale(1.2) rotate(5deg);
-}
+} */
 
 /* ===== TEXT ===== */
 .div-shop p {

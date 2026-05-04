@@ -18,6 +18,12 @@ langBtn.addEventListener('click', () => {
     });
 
     document.body.dir = isArabic ? 'ltr' : 'rtl';
+    if (isArabic){
+      document.body.classList.remove('rtl');
+    }
+    else{
+      document.body.classList.add('rtl');
+    }
     langBtn.innerText = isArabic ? 'العربية' : 'English';
 
     window.dispatchEvent(new CustomEvent('languageChange', { 

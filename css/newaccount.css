@@ -5,6 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* ===== BODY ===== */
 body {
     background: #f6f6f6;
     display: flex;
@@ -12,11 +13,14 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    height: 100vh;
+
+    /* مهم عشان الهيدر ما يغطيش الصفحة */
+    padding-top: 80px;
 }
 
+/* ===== CONTAINER ===== */
 .container {
-    width: 1100px;
+    width: 1000px;
     height: auto;
     min-height: 700px;
     background: white;
@@ -26,7 +30,7 @@ body {
     box-shadow: 0 15px 40px rgba(6, 168, 238, 0.79);
 }
 
-/* Left Side */
+/* ===== FORM SECTION ===== */
 .form-section {
     width: 45%;
     padding: 40px;
@@ -41,12 +45,6 @@ body {
     border-radius: 20px;
     font-size: 14px;
     margin-bottom: 40px;
-}
-
-.form-box {
-    max-width: 350px;
-    margin: auto;
-    width: 100%;
 }
 
 .form-box {
@@ -91,8 +89,7 @@ input:focus {
     border-color: #f0c24f;
 }
 
-
-
+/* ===== BUTTON ===== */
 button[type="submit"] {
     background: #030ea9;
     border: none;
@@ -102,22 +99,18 @@ button[type="submit"] {
     cursor: pointer;
     transition: 0.3s;
     margin-top: 10px;
-    box-shadow: #0882e6;
     color: white;
 }
 
 button[type="submit"]:hover {
     background: rgb(255, 172, 47);
-    box-shadow: #0d158d;
     color: #000;
 }
 
-
-
+/* ===== SOCIAL ===== */
 .social-login {
     display: flex;
     gap: 15px;
-    /* مسافة بين الزرارين */
 }
 
 .social-btn {
@@ -128,41 +121,29 @@ button[type="submit"]:hover {
     background: white;
     cursor: pointer;
     transition: 0.3s;
-
-    /* تظبيط اللينك */
     text-decoration: none;
-    /* شيل الخط الأزرق */
     color: #333;
-    /* لون الكلام الأساسي */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    font-weight: 500;
 }
 
 .social-btn:hover {
     background: #046fcd;
     color: white;
-    /* الكلام هيتحول أبيض مع الخلفية الزرقاء */
     border-color: #046fcd;
-    box-shadow: 0 4px 10px rgba(19, 3, 249, 0.2);
-    /* ضل خفيف */
 }
-
-.bottom-text {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #777;
+.bottom-text a{
+    color: #0745a7;
 }
-
-.bottom-text a {
+.bottom-text a:hover {
     color: green;
-    text-decoration: none;
-    font-weight: bold;
+    background-color: #eaffea;
+    padding: 2px 5px;
+    border-radius: 5px;
 }
 
-/* Right Side */
+/* ===== IMAGE ===== */
 .image-section {
     width: 55%;
     overflow: hidden;
@@ -174,23 +155,7 @@ button[type="submit"]:hover {
     object-fit: cover;
 }
 
-/* Responsive */
-@media(max-width: 900px) {
-    .container {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .form-section,
-    .image-section {
-        width: 100%;
-    }
-
-    .image-section {
-        height: 350px;
-    }
-}
-
+/* ===== PHONE ===== */
 .phone-group {
     display: flex;
     gap: 10px;
@@ -203,7 +168,6 @@ button[type="submit"]:hover {
     border: 1px solid #eee;
     background: #fafafa;
     padding: 14px;
-    outline: none;
 }
 
 .phone-group input {
@@ -211,32 +175,26 @@ button[type="submit"]:hover {
     margin-bottom: 0;
 }
 
-
+/* ===== HEADER ===== */
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap');
-
-body {
-    margin: 0;
-}
 
 .header-wrapper {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    height: 60px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1a2e1c;
     padding: 0 50px;
-    transition: all 0.4s ease;
     box-sizing: border-box;
 }
 
 .heading {
     display: flex;
     align-items: center;
-    margin: 20px;
 }
 
 .icon {
@@ -255,11 +213,10 @@ h2 {
 .nav-container {
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
 }
 
 .navdiv {
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 a {
@@ -267,31 +224,20 @@ a {
     color: white;
     font-family: "Reem Kufi", sans-serif;
     font-weight: 600;
-    margin: 0 8px;
-    padding: 8px 10px;
-    transition: 0.3s;
+    margin: 0 6px;
+    padding: 6px 8px;
     border-radius: 10px;
-    white-space: nowrap;
+    transition: 0.3s;
 }
 
-a:hover,
-a:active,
-a:focus {
-    background-color: #3d6b41 !important;
-    color: white !important;
+a:hover {
+    background-color: #3d6b41;
 }
 
+/* ===== SCROLLED HEADER ===== */
 .header-wrapper.scrolled {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height: 70px;
-}
-
-.header-wrapper.scrolled {
-    background-color: rgba(255, 255, 255, 0.95);
-    height: 70px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-wrapper.scrolled a,
@@ -299,7 +245,7 @@ a:focus {
     color: #1a2e1c !important;
 }
 
-
+/* ===== DARK MODE ===== */
 body.dark-mode {
     background-color: #1a1a1a !important;
     color: white !important;
@@ -309,7 +255,7 @@ body.dark-mode .header-wrapper {
     background-color: #252525 !important;
 }
 
-
+/* ===== BUTTONS ===== */
 .control-btn {
     background-color: #3d6b41;
     color: white;
@@ -318,45 +264,44 @@ body.dark-mode .header-wrapper {
     margin-left: 8px;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Reem Kufi", sans-serif;
-    font-size: 14px;
-    transition: 0.3s;
 }
 
-.control-btn:hover {
-    background-color: #2e5232;
-}
-
-.header-wrapper.scrolled a:hover {
-    background-color: #3d6b41;
-    color: white !important;
-}
-
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .header-wrapper {
-        padding: 0 5px;
+
+    body {
+        padding-top: 90px;
     }
 
-    .heading {
-        margin-left: 10px;
+    .container {
+        flex-direction: column;
+        width: 100%;
     }
 
-    .navdiv {
-        margin-right: 5px;
+    .form-section,
+    .image-section {
+        width: 100%;
+    }
+
+    .image-section {
+        height: 300px;
     }
 
     a {
-        margin: 0 2px;
-        font-size: 8px;
-        padding: 4px 4px;
+        font-size: 12px !important;
+        margin: 0 4px;
+    }
+
+    .header-wrapper {
+        padding: 0 10px;
     }
 
     h2 {
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .icon {
-        width: 22px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
 }

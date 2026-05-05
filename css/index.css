@@ -417,9 +417,6 @@
           transition: transform 0.3s ease;
       }
 
-      .animal-card:hover {
-          transform: translateY(-10px);
-      }
 
       .card-image {
           height: 200px;

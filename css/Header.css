@@ -33,9 +33,8 @@ body {
     margin-right: 7px;
 }
 
-h2 {
-    color: white;
-    font-size: 20px;
+h2 { 
+    font-size: 25px;
     font-family: "Reem Kufi", sans-serif;
 }
  .nav-container{
@@ -94,7 +93,6 @@ body.dark-mode td {
     background-color: #252525 !important; 
     color: white !important;
 }
-
 .control-btn {
     background-color: #3d6b41;
     color: white;

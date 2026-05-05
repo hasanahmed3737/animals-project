@@ -51,6 +51,7 @@ footer {
 .footer-link {
     cursor: pointer;
     font-size: 13px;
+    margin-top: 10px;
     margin-bottom: 8px;
     text-transform: uppercase; 
     transition: 0.3s;

@@ -1,5 +1,5 @@
-const langBtn = document.getElementById('langBtn');
-const formContainer = document.getElementById('formContainer');
+const myFormBtn = document.getElementById('langBtn');
+const myFormContainer = document.getElementById('formContainer');
 
 const translations = {
     en: {
@@ -84,12 +84,10 @@ langBtn.addEventListener('click', () => {
     document.getElementById('optOther').innerText = translations[currentLang].other;
 
     if(currentLang === 'ar') {
-        document.body.classList.add('rtl');
-        formContainer.classList.add('rtl');
+        myFormContainer.classList.add('rtl');
        document.body.dir = 'rtl'
     } else {
-        document.body.classList.remove('rtl');
-        formContainer.classList.remove('rtl');
+        myFormContainer.classList.remove('rtl');
         document.body.dir = 'ltr';
     }
 });

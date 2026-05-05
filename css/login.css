@@ -109,7 +109,6 @@ body {
     border-color: #0d2558;
 }
 
-/* حاوية الباسورد والأيقونة */
 .password-input-container {
     position: relative;
 }
@@ -129,7 +128,6 @@ body {
     display: none;
 }
 
-/* روابط نسيان كلمة السر */
 .forgot-link {
     display: block;
     text-align: right;
@@ -139,12 +137,11 @@ body {
     margin-bottom: 25px;
 }
 
-/* الأزرار */
 .login-btn {
     width: 100%;
     padding: 14px;
     background-color: #0d2558;
-    /* نفس اللون الكحلي في الصورة */
+
     color: white;
     border: none;
     border-radius: 12px;
@@ -187,7 +184,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* نص التسجيل الجديد */
 .signup-text {
     text-align: center;
     margin-top: 25px;
@@ -201,47 +197,37 @@ body {
     text-decoration: none;
 }
 
-/* Media Query للهواتف والشاشات الصغيرة */
 @media (max-width: 768px) {
     body {
         padding: 20px;
-        /* مسافة بسيطة حول الكارت في الموبايل */
         height: auto;
-        /* السماح للصفحة بالطول حسب المحتوى */
         align-items: flex-start;
     }
 
     .main-container {
         flex-direction: column;
-        /* ترتيب العناصر تحت بعض بدل جنب بعض */
         height: auto;
-        /* الارتفاع يتحدد حسب المحتوى */
         width: 100%;
         border-radius: 20px;
-        /* تصغير الانحناء ليناسب الموبايل */
     }
 
     .welcome-section {
         height: 250px;
-        /* تحديد ارتفاع ثابت للصورة في الموبايل */
         flex: none;
         width: 100%;
     }
 
     .content h1 {
         font-size: 1.8rem;
-        /* تصغير الخط ليناسب الشاشة */
     }
 
     .login-section {
         padding: 30px 20px;
-        /* تقليل المسافات الداخلية */
     }
 
     .login-box h1 {
         font-size: 1.6rem;
-        text-align: center;
-        /* توسيط العنوان */
+        text-align: center; 
         margin-bottom: 20px;
     }
 }

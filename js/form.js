@@ -24,7 +24,10 @@ const translations = {
         france: "France",
         italy: "Italy",
         germany: "Germany",
-        other: "Other"
+        other: "Other",
+        summaryTitle: "Review Items",
+        totalLabel: "Total Amount:",
+        emptyCart: "Your cart is currently empty."
     },
     ar: {
         btn: "التغيير للإنجليزية",
@@ -48,9 +51,52 @@ const translations = {
         france: "فرنسا",
         italy: "إيطاليا",
         germany: "ألمانيا",
-        other: "أخرى"
+        other: "أخرى",
+        summaryTitle: "مراجعة المنتجات",
+        totalLabel: "الإجمالي الكلي:",
+        emptyCart: "سلة المشتريات فارغة حالياً."
     }
 };
+
+function renderOrderSummary(lang) {
+    const itemList = document.getElementById('itemList');
+    const totalAmountSpan = document.getElementById('totalAmount');
+    const summaryHeader = document.querySelector('.order-summary-box h3');
+    const totalLabel = document.querySelector('.total-section span:first-child');
+    
+    let cart = JSON.parse(localStorage.getItem('wildkeep_cart')) || [];
+    const t = translations[lang];
+
+    if(summaryHeader) summaryHeader.innerText = t.summaryTitle;
+    if(totalLabel) totalLabel.innerText = t.totalLabel;
+
+    if (!itemList) return;
+
+    if (cart.length === 0) {
+        itemList.innerHTML = `<p style="text-align: center; color: #999; padding: 20px;">${t.emptyCart}</p>`;
+        if(totalAmountSpan) totalAmountSpan.innerText = "0.00";
+        return;
+    }
+
+    itemList.innerHTML = '';
+    let total = 0;
+
+    cart.forEach((item) => {
+        total += item.price;
+        const row = document.createElement('div');
+        row.className = "summary-item";
+        row.innerHTML = `
+            <div style="display:flex; align-items:center; gap:10px;">
+                <img src="${item.image}" alt="${item.name}">
+                <span>${item.name}</span>
+            </div>
+            <span style="font-weight:bold;">$${item.price}</span>
+        `;
+        itemList.appendChild(row);
+    });
+
+    if(totalAmountSpan) totalAmountSpan.innerText = total.toFixed(2);
+}
 
 function applyFormLanguage(lang) {
     const t = translations[lang];
@@ -82,10 +128,13 @@ function applyFormLanguage(lang) {
     if(document.getElementById('optOther')) document.getElementById('optOther').innerText = t.other;
 
     document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    
     if(myFormContainer) {
         if(lang === 'ar') myFormContainer.classList.add('rtl');
         else myFormContainer.classList.remove('rtl');
     }
+
+    renderOrderSummary(lang);
 }
 
 window.addEventListener('load', () => {
@@ -106,5 +155,24 @@ if(myFormBtn) {
         const newLang = document.body.dir === 'rtl' ? 'en' : 'ar';
         localStorage.setItem('selectedLang', newLang);
         applyFormLanguage(newLang);
+    });
+}
+
+const orderForm = document.getElementById('orderForm');
+if(orderForm) {
+    orderForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let cart = JSON.parse(localStorage.getItem('wildkeep_cart')) || [];
+        
+        if (cart.length === 0) {
+            const currentLang = localStorage.getItem('selectedLang') || 'en';
+            alert(currentLang === 'ar' ? "السلة فارغة، يرجى إضافة منتجات أولاً!" : "Cart is empty, please add items first!");
+            return;
+        }
+
+        alert(document.body.dir === 'rtl' ? "تم استلام طلبك بنجاح!" : "Order received successfully!");
+        
+        localStorage.removeItem('wildkeep_cart');
+        window.location.href = "../index.html";
     });
 }

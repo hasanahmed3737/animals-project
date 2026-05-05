@@ -1,6 +1,3 @@
-/* =======================
-   GLOBAL RESET
-======================= */
 * {
     margin: 0;
     padding: 0;
@@ -13,9 +10,6 @@ body {
     background-size: cover;
 }
 
-/* =======================
-   MAIN
-======================= */
 main {
     width: 100%;
     display: flex;
@@ -25,9 +19,6 @@ main {
     padding: 0 15px;
 }
 
-/* =======================
-   TITLE
-======================= */
 .p-shop {
     width: 100%;
     text-align: center;
@@ -38,9 +29,6 @@ main {
     margin-bottom: 40px;
 }
 
-/* =======================
-   SEARCH
-======================= */
 #search {
     width: 100%;
     max-width: 500px;
@@ -60,9 +48,6 @@ main {
     box-shadow: 0 0 10px rgba(255, 191, 0, 0.4);
 }
 
-/* =======================
-   GRID
-======================= */
 section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -72,40 +57,27 @@ section {
     padding: 20px;
 }
 
-/* =======================
-   CARD
-======================= */
 .animal-card {
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     font-family: 'Segoe UI', sans-serif;
-
-    /* animation state */
     opacity: 0;
     transform: translateY(40px);
-
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* لما يظهر */
 .animal-card.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* =======================
-   HOVER (مهم 🔥)
-======================= */
 .animal-card:hover {
     transform: translateY(-30px) scale(1.06);
     box-shadow: 0 35px 70px rgba(0, 0, 0, 0.25);
 }
 
-/* =======================
-   IMAGE
-======================= */
 .card-image {
     height: 200px;
     overflow: hidden;
@@ -122,14 +94,10 @@ section {
     transform: scale(1.15);
 }
 
-/* =======================
-   BODY
-======================= */
 .card-body {
     padding: 16px;
 }
 
-/* top */
 .card-top {
     display: flex;
     justify-content: space-between;
@@ -140,7 +108,6 @@ section {
     font-size: 18px;
 }
 
-/* badge */
 .badge-safe {
     background: #e6f4ea;
     color: #2e7d32;
@@ -149,20 +116,17 @@ section {
     font-size: 12px;
 }
 
-/* rating */
 .card-rating {
     color: #f4b400;
     margin: 8px 0;
 }
 
-/* location */
 .card-location {
     color: #777;
     font-size: 14px;
     margin-bottom: 10px;
 }
 
-/* tags */
 .card-tags {
     display: flex;
     gap: 8px;
@@ -185,9 +149,6 @@ section {
     color: #3f51b5;
 }
 
-/* =======================
-   FOOTER
-======================= */
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -201,9 +162,6 @@ section {
     font-weight: bold;
 }
 
-/* =======================
-   BUTTON
-======================= */
 .btn-view {
     background: linear-gradient(135deg, #2e7d32, #1b5e20);
     color: #fff;
@@ -219,9 +177,23 @@ section {
     box-shadow: 0 10px 20px rgba(46, 125, 50, 0.4);
 }
 
-/* =======================
-   MOBILE
-======================= */
+.cart-box {
+    background: #2c3e2f;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+.cart-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-box li {
+    margin-bottom: 8px;
+}
+
 @media (max-width: 600px) {
     .p-shop {
         font-size: 40px;
@@ -230,4 +202,19 @@ section {
     #search {
         width: 90%;
     }
+<<<<<<< HEAD
 }
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.animal-card {
+    background: white;
+    border-radius: 12px;
+}
+=======
+}
+>>>>>>> e922f398fc3166116a3fd86b502bfc05e556120d

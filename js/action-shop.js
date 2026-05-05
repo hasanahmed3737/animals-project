@@ -15,6 +15,32 @@ function updateCart() {
     }
 }
 
+function filterByCategory() {
+    const params = new URLSearchParams(window.location.search);
+    let category = params.get('category');
+
+    if (category) {
+        category = category.toLowerCase().trim();
+        cards.forEach(card => {
+            let cardCategory = card.getAttribute('data-category');
+            if (cardCategory) {
+                cardCategory = cardCategory.toLowerCase().trim();
+                
+                if (cardCategory === category || category.includes(cardCategory) || cardCategory.includes(category)) {
+                    card.parentElement.style.display = "block";
+                } else {
+                    card.parentElement.style.display = "none";
+                }
+            }
+        });
+        
+        const titleElement = document.querySelector('.p-shop');
+        if (titleElement) {
+            titleElement.textContent = `WildKeep - ${category.charAt(0).toUpperCase() + category.slice(1)}`;
+        }
+    }
+}
+
 cards.forEach(card => {
     card.addEventListener("mousemove", (e) => {
         const rect = card.getBoundingClientRect();
@@ -34,41 +60,35 @@ cards.forEach(card => {
 
     const buyBtn = card.querySelector(".btn-view");
     if (buyBtn) {
-        buyBtn.addEventListener("click", () => {
-            updateCart();
-        });
+        buyBtn.addEventListener("click", updateCart);
     }
 });
 
 if (searchInput) {
     searchInput.addEventListener("input", () => {
-        const value = searchInput.value.toLowerCase();
+        const query = searchInput.value.toLowerCase();
         cards.forEach(card => {
             const title = card.querySelector("h3").textContent.toLowerCase();
-            if (title.includes(value)) {
-                card.parentElement.style.display = "block";
-            } else {
-                card.parentElement.style.display = "none";
-            }
+            card.parentElement.style.display = title.includes(query) ? "block" : "none";
         });
     });
 }
 
-const observer = new IntersectionObserver((entries) => {
+const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("show");
         }
     });
-}, {
-    threshold: 0.1
-});
+}, { threshold: 0.1 });
 
-cards.forEach(card => observer.observe(card));
+cards.forEach(card => revealObserver.observe(card));
 
 if (paw) {
     document.addEventListener("mousemove", (e) => {
-        paw.style.left = e.clientX + "px";
-        paw.style.top = e.clientY + "px";
+        paw.style.left = `${e.clientX}px`;
+        paw.style.top = `${e.clientY}px`;
     });
 }
+
+window.addEventListener("DOMContentLoaded", filterByCategory);

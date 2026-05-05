@@ -218,10 +218,22 @@ section {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(46, 125, 50, 0.4);
 }
+.cart-box {
+    background: #2c3e2f;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
 
-/* =======================
-   MOBILE
-======================= */
+.cart-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-box li {
+    margin-bottom: 8px;
+}
 @media (max-width: 600px) {
     .p-shop {
         font-size: 40px;

@@ -61,34 +61,34 @@ const observer = new IntersectionObserver((entries) => {
 cards.forEach(card => observer.observe(card));
 
 /* =========================
-   SEARCH FUNCTION 🔍
+   SEARCH FUNCTION 🔍 (المعدلة)
 ========================= */
-function filterCards() {
-    const value = searchInput.value.toLowerCase().trim();
+const searchInput = document.getElementById("search");
+const cards = document.querySelectorAll(".animal-card");
+
+searchInput.addEventListener("input", () => {
+    const value = searchInput.value.toLowerCase();
 
     cards.forEach(card => {
         const title = card.querySelector("h3").textContent.toLowerCase();
 
-        const match = title.includes(value);
-
-        if (match) {
-            card.style.display = "block";
-            setTimeout(() => card.classList.add("show"), 50);
+        if (title.includes(value)) {
+            card.parentElement.style.display = "block"; // يظهر الكارد
         } else {
-            card.classList.remove("show");
-            setTimeout(() => card.style.display = "none", 150);
+            card.parentElement.style.display = "none"; // يخفيه
         }
     });
-}
+});
 
-searchInput.addEventListener("input", filterCards);
-
-
+/* =========================
+   PAW CURSOR 🐾
+========================= */
 const paw = document.getElementById("pawCursor");
 
 document.addEventListener("mousemove", (e) => {
     paw.style.left = e.clientX + "px";
     paw.style.top = e.clientY + "px";
 });
+
 
 

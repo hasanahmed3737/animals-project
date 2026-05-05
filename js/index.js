@@ -1,19 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-    // ============================
-    // 1. تأثير ضغط الأزرار (Button Click)
-    // ============================
     document.querySelectorAll('button, .btn-accent, .btn-glass').forEach(btn => {
         btn.addEventListener('mousedown', () => btn.style.transform = 'scale(0.95)');
         btn.addEventListener('mouseup', () => btn.style.transform = '');
         btn.addEventListener('mouseleave', () => btn.style.transform = '');
     });
-
-
-    // ============================
-    // 2. ظهور العناصر عند التمرير (Reveal on Scroll)
-    // ============================
-    // أضفنا الـ CSS اللازم لهذا الجزء في الأسفل ليعمل الكود
     const revealElements = document.querySelectorAll('.hero-card, .animal-card, .stats-item, .footer-col, .video-box');
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -31,11 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
         el.style.transition = "all 0.6s ease-out";
         revealObserver.observe(el);
     });
-
-
-    // ============================
-    // 3. عداد الأرقام (Counter Animation)
-    // ============================
     const counters = document.querySelectorAll('.stat-number');
     const statsSection = document.querySelector('.stats-bar');
 
@@ -43,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const targetText = counter.innerText;
         const targetNumber = parseFloat(targetText.replace(/[^0-9.]/g, ''));
         let current = 0;
-        const duration = 2000; // مدة الأنميشن بالملي ثانية
+        const duration = 2000; 
         const step = targetNumber / (duration / 16);
 
         const update = () => {
@@ -67,11 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, { threshold: 0.5 });
         statsObserver.observe(statsSection);
     }
-
-
-    // ============================
-    // 4. تأثير حركة الأوراق (Parallax)
-    // ============================
     window.addEventListener('scroll', () => {
         const leaf = document.querySelector('.hero-bg-leaf');
         if (leaf) {
@@ -80,10 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-
-    // ============================
-    // 5. تأثير الكروت ثلاثية الأبعاد (3D Effect)
-    // ============================
     const cards = document.querySelectorAll('.animal-card, .hero-card');
 
     cards.forEach(card => {
@@ -103,10 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-
-    // ============================
-    // 6. نظام الثيمات الثلاثي (Theme System)
-    // ============================
     const themeBtn = document.getElementById("theme-btn");
     const themes = ["light", "dark", "nature"];
 
@@ -129,10 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     setTheme(localStorage.getItem("theme") || "light");
 
-
-    // ============================
-    // 7. نظام اللغات (Language System)
-    // ============================
     const langBtn = document.getElementById("lang-btn");
     const translations = {
         en: {

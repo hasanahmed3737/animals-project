@@ -516,11 +516,8 @@
               font-weight: 900;
               color: #11791c;
               display: block;
-              /* يخلي العنصر يتصرف كنص */
               text-align: center;
-              /* يوسّط النص أفقيًا */
               width: 100%;
-              /* يخلي العنصر ياخد عرض البطاقة */
           }
 
       .btn-view {
@@ -855,9 +852,6 @@
                           height: 20px;
                       }
                   }
-                                  /* =========================
-                   THEME SYSTEM FINAL FIX
-                ========================= */
                 
                                   body[data-theme="light"] {
                                       background: #f9f7f2;
@@ -873,8 +867,6 @@
                                       background: #e8f5e9;
                                       color: #1b3a1b;
                                   }
-                
-                                  /* smooth transition */
                                   body {
                                       transition: all 0.4s ease;
                                   }

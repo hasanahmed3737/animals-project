@@ -84,9 +84,9 @@ langBtn.addEventListener('click', () => {
     document.getElementById('optOther').innerText = translations[currentLang].other;
 
     if(currentLang === 'ar') {
-        document.bodyclassList.add('rtl);
+        document.body.classList.add('rtl');
         formContainer.classList.add('rtl');
-       edocument.body.dir = 'rtl'
+       document.body.dir = 'rtl'
     } else {
         document.body.classList.remove('rtl');
         formContainer.classList.remove('rtl');

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -136,4 +136,140 @@
     </div>
   </footer>
 </body>
-</html> 
+</html>  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop | Orders</title>
+  <link rel="stylesheet" href="../css/form.css"> 
+  <link rel="stylesheet" href="../css/Header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <script src="../js/Header.js" defer></script>
+  <script src="../js/form.js" defer></script>
+  <script src="../js/footer.js" defer></script>
+</head>
+<body>
+    <div id="navbar" class="header-wrapper">
+        <div class="heading">
+            <img src="../images/logo.jpg" alt="icon" class="icon">
+            <h2 id="navLogo">WildKeep</h2>
+        </div>
+        <div class="navdiv">
+            <nav class="nav-container">
+                <a href="../index.html" class="nav-link" data-en="Home" data-ar="الرئيسيه">Home</a>
+                <a href="shop.html" class="nav-link" data-en="Shop" data-ar="المتجر" >Shop</a>
+                <a href="categories.html"class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
+                <a href="extinct.html"class="nav-link" data-en="Extinct" data-ar="منقرضه">Extinct</a>
+                <a href="endangered.html" class="nav-link" data-en="Endangered" data-ar="مهدده بالأنقراض" >Endangered</a>
+                <a href="ai.html"class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
+                <a href="main.html" class="nav-link" data-en="main" data-ar="الفهرس">Index</a>
+                <a style="background-color: #3d6b41 ;" href="form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
+                <a href="login.html" class="nav-link" data-en="Login" data-ar="تسجيل دخول">Login</a>
+                <button id="lang-btn" class="control-btn"> العربية</button>
+                <button id="theme-btn" class="control-btn">🌙</button>
+            </nav>
+        </div>
+    </div>
+
+    <div class="form-container" id="formContainer">
+        <button id="langBtn" class="lang-switch">Switch to Arabic</button>
+        
+        <h2 id="formTitle">Order Registration</h2>
+        <form action="#" method="POST">
+            <label for="name" id="labelName">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label id="labelPhone">Phone Number</label>
+            <div class="phone-group">
+                <select id="countryCode">
+                    <option value="+20">+20 (EG)</option>
+                    <option value="+966">+966 (SA)</option>
+                    <option value="+971">+971 (AE)</option>
+                    <option value="+33">+33 (FR)</option>
+                    <option value="+39">+39 (IT)</option>
+                    <option value="+49">+49 (DE)</option>
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+            </div>
+
+            <label for="email" id="labelEmail">Gmail Address</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="date" id="labelDate">Preferred Delivery Date</label>
+            <input type="text" id="date" name="date" placeholder="Select delivery date" 
+                   onfocus="(this.type='date')" 
+                   onblur="(this.value=='' ? this.type='text' : this.type='date')" required>
+
+            <label for="country" id="labelCountry">Country</label>
+            <select id="country" name="country">
+                <option value="" disabled selected id="optSelect">Select your country</option>
+                <option value="egypt" id="optEgypt">Egypt</option>
+                <option value="saudi" id="optSaudi">Saudi Arabia</option>
+                <option value="uae" id="optUAE">UAE</option>
+                <option value="france" id="optFrance">France</option>
+                <option value="italy" id="optItaly">Italy</option>
+                <option value="germany" id="optGermany">Germany</option>
+                <option value="other" id="optOther">Other</option>
+            </select>
+
+            <label for="notes" id="labelNotes">Notes</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Any special requests?"></textarea>
+
+            <button type="submit" id="submitBtn">Confirm Order</button>
+        </form>
+    </div>
+
+   <footer id="main-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="NON-LOGO-ICON">🐊</p>
+             <span class="footer-brand-text translate" data-en="WILDKEEP" data-ar="الحياة البرية">WILDKEEP</span>
+             <p class="brand-description translate" 
+                data-en="YOUR TRUSTED PLATFORM FOR EXOTIC PETS — EDUCATIONAL — AND WILDLIFE CONSERVATION AWARENESS." 
+                data-ar="منصتك الموثوقة للحيوانات الأليفة الغريبة - تعليمية - والتوعية بالحفاظ على الحياة البرية.">
+                YOUR TRUSTED PLATFORM FOR EXOTIC PETS — EDUCATIONAL — AND WILDLIFE CONSERVATION AWARENESS.
+             </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="translate" data-en="ANIMALS" data-ar="الحيوانات">ANIMALS</h4>
+          <div style="font-size:14px; margin-bottom:8px"><a href="./Html/shop.html?category=reptiles" class="footer-link translate" data-en="REPTILES" data-ar="الزواحف">REPTILES</a></div>
+          <div style="font-size:14px; margin-bottom:8px"><a href="./Html/shop.html?category=birds" class="footer-link translate" data-en="BIRDS" data-ar="الطيور">BIRDS</a></div>
+          <div style="font-size:14px; margin-bottom:8px"><a href="./Html/shop.html?category=mammals" class="footer-link translate" data-en="MAMMALS" data-ar="الثدييات">MAMMALS</a></div>
+          <div style="font-size:14px; margin-bottom:8px"><a href="./Html/shop.html?category=Marine" class="footer-link translate" data-en="MARINE CREATURES" data-ar="المخلوقات البحرية">MARINE</a></div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="translate" data-en="LEARN" data-ar="تعلم">LEARN</h4>
+          <div style="font-size:14px; margin-bottom:10px"><a href="extinct.html" class="footer-link translate" data-en="EXTINCT" data-ar="المنقرضة">EXTINCT</a></div>
+          <div style="font-size:14px; margin-bottom:10px"><a href="endangered.html" class="footer-link translate" data-en="ENDANGERED" data-ar="المهددة بالانقراض">ENDANGERED</a></div> 
+        </div>
+
+        <div class="footer-col">
+          <h4 class="translate" data-en="CONTACT" data-ar="اتصل بنا">CONTACT</h4>
+          <div style="font-size:14px; margin-bottom:10px">🔳 HELLO@WILDKEEP.COM</div>
+          <div style="font-size:14px; margin-bottom:10px">📞 +1 (555) 123-4567</div>
+          <div style="font-size:15px" class="translate" data-en="CAIRO, EGYPT" data-ar="القاهرة، مصر">CAIRO, EGYPT</div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"></a>
+                <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="IG"></a>
+                <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter--v1.png" alt="TW"></a>
+                <a href="https://wa.me/201234567890" target="_blank"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WA"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LI"></a>
+                <a href="https://snapchat.com" target="_blank"><img src="https://img.icons8.com/color/48/snapchat--v1.png" alt="SC"></a>
+            </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom translate" 
+           data-en="© 2026 WILDKEEP. ALL RIGHTS RESERVED. BUILT WITH CARE FOR WILDLIFE 🌿." 
+           data-ar="© ٢٠٢٦ وايلد كيب. جميع الحقوق محفوظة. صُنع بكل حب للحياة البرية 🌿.">
+        © 2026 WILDKEEP. ALL RIGHTS RESERVED. BUILT WITH CARE FOR WILDLIFE 🌿.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

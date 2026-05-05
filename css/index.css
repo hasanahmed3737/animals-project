@@ -413,7 +413,7 @@
           background: white;
           border-radius: 25px;
           overflow: hidden;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 30px rgba(9, 160, 42, 0.722);
           transition: transform 0.3s ease;
       }
 
@@ -508,13 +508,20 @@
           align-items: center;
           padding-top: 15px;
           border-top: 1px solid #f0f0f0;
+        text-align: center;
       }
 
-      .card-price {
-          font-size: 1.5rem;
-          font-weight: 900;
-          color: #1a2e1c;
-      }
+          .card-price {
+              font-size: 1.5rem;
+              font-weight: 900;
+              color: #11791c;
+              display: block;
+              /* يخلي العنصر يتصرف كنص */
+              text-align: center;
+              /* يوسّط النص أفقيًا */
+              width: 100%;
+              /* يخلي العنصر ياخد عرض البطاقة */
+          }
 
       .btn-view {
           background: #2d5a27;

@@ -8,79 +8,94 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/Header.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/index.js" defer></script>
     <script src="js/Header.js" defer></script>
 </head>
+
 <body>
+
+    <!-- ===== الهيدر ===== -->
     <div id="navbar" class="header-wrapper">
         <div class="heading">
             <img src="images/logo.jpg" alt="icon" class="icon">
             <h2>WildKeep</h2>
         </div>
-        
+
         <div class="navdiv">
             <nav class="nav-container">
-                <a style="background-color: #3d6b41;" href="index.html" class="nav-link" data-en="Home" data-ar="الرئيسيه">Home</a>
-                <a href="Html/shop.html" class="nav-link" data-en="Shop" data-ar="المتجر" >Shop</a>
-                <a href="Html/categories.html"class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
-                <a href="Html/extinct.html"class="nav-link" data-en="Extinct" data-ar="منقرضه">Extinct</a>
-                <a href="Html/endangered.html" class="nav-link" data-en="Endangered" data-ar="مهدده بالأنقراض" >Endangered</a>
-                <a href="Html/ai.html"class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
-                <a href="Html/main.html" class="nav-link" data-en="Index" data-ar="الفهرس">Index</a>
-                <a href="Html/form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
-                <a href="Html/login.html" class="nav-link" data-en="Login"  data-ar="تسجيل دخول"> Login</a> 
-                <button id="lang-btn" class="control-btn"> العربية</button>
+                <a href="index.html" class="nav-link" data-en="Home"
+                    data-ar="الرئيسية">Home</a>
+                <a href="./Html/shop.html" class="nav-link" data-en="Shop" data-ar="المتجر">Shop</a>
+                <a href="./Html/categories.html" class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
+                <a href="./Html/extinct.html" class="nav-link" data-en="Extinct" data-ar="منقرضة">Extinct</a>
+                <a href="./Html/endangered.html" class="nav-link" data-en="Endangered"
+                    data-ar="مهددة بالانقراض">Endangered</a>
+                <a href="./Html/ai.html" class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
+                <a href="./Html/main.html" class="nav-link" data-en="Index" data-ar="الفهرس">Index</a>
+                <a href="./Html/form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
+                <a href="./Html/login.html" class="nav-link" data-en="Login" data-ar="تسجيل دخول">Login</a>
+                <button id="lang-btn" class="control-btn">العربية</button>
                 <button id="theme-btn" class="control-btn">🌙</button>
             </nav>
         </div>
     </div>
-
-
-</body>
-</html>
-
     <section class="hero">
         <div class="hero-bg-leaf">🌿</div>
         <div class="hero-inner">
             <div class="hero-content">
-                <div class="hero-badge">🌿 Egypt's #1 Exotic Pet Platform</div>
-                <h1 class="hero-title">Find Your Perfect<br><span>Wild Companion</span></h1>
-                <p class="hero-desc">Explore exotic animals, learn about wildlife conservation, and connect with expert
-                    breeders. Your journey into the animal kingdom starts here.</p>
+
+                <div class="hero-badge" data-en="🌿 Egypt's #1 Exotic Pet Platform"
+                    data-ar="🌿 منصة الحيوانات الأليفة الأولى في مصر">
+                    🌿 Egypt's #1 Exotic Pet Platform
+                </div>
+
+                <h1 class="hero-title">
+                    <span data-en="Find Your Perfect" data-ar="اعثر على رفيقك">Find Your Perfect</span>
+                    <br>
+                    <span data-en="Wild Companion" data-ar="البري المثالي">Wild Companion</span>
+                </h1>
+
+                <p class="hero-desc"
+                    data-en="Explore exotic animals, learn about wildlife conservation, and connect with expert breeders. Your journey into the animal kingdom starts here."
+                    data-ar="استكشف الحيوانات النادرة، وتعلم عن الحفاظ على الحياة البرية، وتواصل مع مربين متخصصين. رحلتك إلى عالم الحيوانات تبدأ هنا.">
+                    Explore exotic animals, learn about wildlife conservation, and connect with expert breeders. Your
+                    journey into the animal kingdom starts here.
+                </p>
+
                 <div class="hero-btns">
-                    <button class="btn-accent">Browse Animals → 
-                        <a href="./Html/categories.html" class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
-                    </button>
-                    <button class="btn-glass">🤖
-                        <a href="./Html/ai.html" class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
-                    </button>
+                    <a href="./Html/categories.html" class="btn-accent nav-link" data-en="Browse Animals →"
+                        data-ar="تصفح الحيوانات ←" style="text-decoration:none; display:inline-block;">
+                        Browse Animals →
+                    </a>
+                    <a href="./Html/ai.html" class="btn-glass nav-link" data-en="🤖 AI Assistant"
+                        data-ar="🤖 المساعد الذكي" style="text-decoration:none; display:inline-block;">
+                        🤖 AI Assistant
+                    </a>
                 </div>
             </div>
-
             <div class="hero-grid">
                 <div class="hero-card">
                     <span class="card-icon"><a href="./Html/shop.html?category=reptiles">🐍</a></span>
-                    <h3>Reptiles</h3>
-                    <p>10+ species</p>
+                    <h3 data-en="Reptiles" data-ar="الزواحف">Reptiles</h3>
+                    <p data-en="10+ species" data-ar="10+ أنواع">10+ species</p>
                 </div>
                 <div class="hero-card">
                     <span class="card-icon"><a href="./Html/shop.html?category=birds">🦜</a></span>
-                    <h3>Birds</h3>
-                    <p>15+ species</p>
+                    <h3 data-en="Birds" data-ar="الطيور">Birds</h3>
+                    <p data-en="15+ species" data-ar="15+ أنواع">15+ species</p>
                 </div>
                 <div class="hero-card">
                     <span class="card-icon"><a href="./Html/shop.html?category=mammals">🦔</a></span>
-                    <h3>Mammals</h3>
-                    <p>12+ species</p>
+                    <h3 data-en="Mammals" data-ar="الثدييات">Mammals</h3>
+                    <p data-en="12+ species" data-ar="12+ أنواع">12+ species</p>
                 </div>
                 <div class="hero-card">
                     <span class="card-icon"><a href="./Html/shop.html?category=marine">🐳</a></span>
-                    <h3>Marine Creatures</h3>
-                    <p>20+ species</p>
+                    <h3 data-en="Marine Creatures" data-ar="المخلوقات البحرية">Marine Creatures</h3>
+                    <p data-en="20+ species" data-ar="20+ أنواع">20+ species</p>
                 </div>
             </div>
         </div>
@@ -88,32 +103,38 @@
     <section class="stats-bar">
         <div class="stats-item">
             <div class="stat-number">20+</div>
-            <div class="stat-label">Animal Species</div>
+            <div class="stat-label" data-en="Animal Species" data-ar="نوع حيوان">Animal Species</div>
         </div>
         <div class="stats-item">
             <div class="stat-number">1.1k+</div>
-            <div class="stat-label">Happy Owners</div>
+            <div class="stat-label" data-en="Happy Owners" data-ar="عميل سعيد">Happy Owners</div>
         </div>
         <div class="stats-item">
             <div class="stat-number">4.7★</div>
-            <div class="stat-label">Average Rating</div>
+            <div class="stat-label" data-en="Average Rating" data-ar="متوسط التقييم">Average Rating</div>
         </div>
         <div class="stats-item">
             <div class="stat-number">100%</div>
-            <div class="stat-label">Ethically Sourced</div>
+            <div class="stat-label" data-en="Ethically Sourced" data-ar="مصادر أخلاقية">Ethically Sourced</div>
         </div>
     </section>
-
     <section class="picks-section">
         <div class="section-container">
             <div class="section-header">
                 <div>
-                    <h2 style="color: black;" class="section-title">Beginner-Friendly Picks 🌱</h2>
-                    <p class="section-subtitle">Perfect for first-time pet owners</p>
+                    <h2 style="color:black;" class="section-title" data-en="Beginner-Friendly Picks 🌱"
+                        data-ar="اختيارات المبتدئين 🌱">
+                        Beginner-Friendly Picks 🌱
+                    </h2>
+                    <p class="section-subtitle" data-en="Perfect for first-time pet owners"
+                        data-ar="مثالية لمن يمتلك حيواناً أليفاً لأول مرة">
+                        Perfect for first-time pet owners
+                    </p>
                 </div>
-                <button class="btn-outline-all"> 
-                    <a href="./Html/shop.html" class="nav-link" data-en="Shop" data-ar="المتجر" >Shop</a>
-                </button>
+                <a href="./Html/shop.html" class="btn-outline-all nav-link" data-en="Shop" data-ar="المتجر"
+                    style="text-decoration:none; display:inline-block;">
+                    Shop
+                </a>
             </div>
 
             <div class="picks-grid">
@@ -121,14 +142,17 @@
                     <div class="card-image">🐍</div>
                     <div class="card-body">
                         <div class="card-top">
-                            <h3>Ball Python</h3>
-                            <span class="badge-safe">✓ Safe</span>
+                            <h3 data-en="Ball Python" data-ar="ثعبان كروي">Ball Python</h3>
+                            <span class="badge-safe" data-en="✓ Safe" data-ar="✓ آمن">✓ Safe</span>
                         </div>
                         <div class="card-rating">⭐⭐⭐⭐½ (4.8)</div>
-                        <p class="card-location">Grasslands of Africa</p>
+                        <p class="card-location" data-en="Grasslands of Africa" data-ar="سهول أفريقيا">
+                            Grasslands of Africa
+                        </p>
                         <div class="card-tags">
-                            <span class="tag green">Beginner-Friendly</span>
-                            <span class="tag blue">Docile</span>
+                            <span class="tag green" data-en="Beginner-Friendly"
+                                data-ar="مناسب للمبتدئين">Beginner-Friendly</span>
+                            <span class="tag blue" data-en="Docile" data-ar="هادئ">Docile</span>
                         </div>
                         <div class="card-footer">
                             <span class="card-price">$120</span>
@@ -136,18 +160,21 @@
                     </div>
                 </div>
 
+                <!-- كارت 2: Dog -->
                 <div class="animal-card">
                     <div class="card-image">🐶</div>
                     <div class="card-body">
                         <div class="card-top">
-                            <h3>Dog</h3>
-                            <span class="badge-safe">✓ Safe</span>
+                            <h3 data-en="Dog" data-ar="كلب">Dog</h3>
+                            <span class="badge-safe" data-en="✓ Safe" data-ar="✓ آمن">✓ Safe</span>
                         </div>
                         <div class="card-rating">⭐⭐⭐⭐½ (4.9)</div>
-                        <p class="card-location">Worldwide (Domesticated)</p>
+                        <p class="card-location" data-en="Worldwide (Domesticated)" data-ar="في كل العالم (مستأنس)">
+                            Worldwide (Domesticated)
+                        </p>
                         <div class="card-tags">
-                            <span class="tag green">Friendly</span>
-                            <span class="tag purple">Interactive</span>
+                            <span class="tag green" data-en="Friendly" data-ar="ودود">Friendly</span>
+                            <span class="tag purple" data-en="Interactive" data-ar="تفاعلي">Interactive</span>
                         </div>
                         <div class="card-footer">
                             <span class="card-price">$200</span>
@@ -155,18 +182,22 @@
                     </div>
                 </div>
 
+                <!-- كارت 3: Corn Snake -->
                 <div class="animal-card">
                     <div class="card-image">🐍</div>
                     <div class="card-body">
                         <div class="card-top">
-                            <h3>Corn Snake</h3>
-                            <span class="badge-safe">✓ Safe</span>
+                            <h3 data-en="Corn Snake" data-ar="ثعبان الذرة">Corn Snake</h3>
+                            <span class="badge-safe" data-en="✓ Safe" data-ar="✓ آمن">✓ Safe</span>
                         </div>
                         <div class="card-rating">⭐⭐⭐⭐½ (4.7)</div>
-                        <p class="card-location">Eastern North America</p>
+                        <p class="card-location" data-en="Eastern North America" data-ar="شرق أمريكا الشمالية">
+                            Eastern North America
+                        </p>
                         <div class="card-tags">
-                            <span class="tag green">Beginner-Friendly</span>
-                            <span class="tag orange">Colorful</span>
+                            <span class="tag green" data-en="Beginner-Friendly"
+                                data-ar="مناسب للمبتدئين">Beginner-Friendly</span>
+                            <span class="tag orange" data-en="Colorful" data-ar="ملون">Colorful</span>
                         </div>
                         <div class="card-footer">
                             <span class="card-price">$80</span>
@@ -174,46 +205,68 @@
                     </div>
                 </div>
 
+                <!-- كارت 4: Cockatiel -->
                 <div class="animal-card">
                     <div class="card-image">🦜</div>
                     <div class="card-body">
                         <div class="card-top">
-                            <h3>Cockatiel</h3>
-                            <span class="badge-safe">✓ Safe</span>
+                            <h3 data-en="Cockatiel" data-ar="طائر الكوكاتيل">Cockatiel</h3>
+                            <span class="badge-safe" data-en="✓ Safe" data-ar="✓ آمن">✓ Safe</span>
                         </div>
                         <div class="card-rating">⭐⭐⭐⭐½ (4.8)</div>
-                        <p class="card-location">Australia</p>
+                        <p class="card-location" data-en="Australia" data-ar="أستراليا">
+                            Australia
+                        </p>
                         <div class="card-tags">
-                            <span class="tag green">Beginner-Friendly</span>
-                            <span class="tag pink">Sweet</span>
+                            <span class="tag green" data-en="Beginner-Friendly"
+                                data-ar="مناسب للمبتدئين">Beginner-Friendly</span>
+                            <span class="tag pink" data-en="Sweet" data-ar="لطيف">Sweet</span>
                         </div>
                         <div class="card-footer">
                             <span class="card-price">$150</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <!-- ===== Conservation ===== -->
     <section class="conservation">
         <div class="conservation-inner">
             <div class="world-icon">🌍</div>
-            <h2>Protecting Wildlife Together</h2>
-            <p>Learn about extinct and endangered species. Understanding their stories helps us protect what remains.
+            <h2 data-en="Protecting Wildlife Together" data-ar="نحمي الحياة البرية معاً">
+                Protecting Wildlife Together
+            </h2>
+            <p data-en="Learn about extinct and endangered species. Understanding their stories helps us protect what remains."
+                data-ar="تعرف على الأنواع المنقرضة والمهددة بالانقراض. فهم قصصها يساعدنا على حماية ما تبقى.">
+                Learn about extinct and endangered species. Understanding their stories helps us protect what remains.
             </p>
             <div class="conservation-btns">
-                <button class="btn-accent-sm"> <a href="./Html/extinct.html">Extinct Animals</a></button>
-                <button class="btn-accent-sm"> <a href="./Html/endangered.html">Endangered</a></button>
+                <a href="./Html/extinct.html" class="btn-accent-sm" data-en="Extinct Animals"
+                    data-ar="الحيوانات المنقرضة" style="text-decoration:none; display:inline-block;">
+                    Extinct Animals
+                </a>
+                <a href="./Html/endangered.html" class="btn-accent-sm" data-en="Endangered" data-ar="المهددة بالانقراض"
+                    style="text-decoration:none; display:inline-block;">
+                    Endangered
+                </a>
             </div>
         </div>
     </section>
+
+    <!-- ===== Video Section ===== -->
     <section class="video-section">
         <div class="video-container">
-            <h2 class="video-title">Discover the Wild World 🌿</h2>
-            <p class="video-desc">
+            <h2 class="video-title" data-en="Discover the Wild World 🌿" data-ar="اكتشف عالم البرية 🌿">
+                Discover the Wild World 🌿
+            </h2>
+            <p class="video-desc"
+                data-en="Watch how exotic animals live, interact, and inspire wildlife lovers around the world."
+                data-ar="شاهد كيف تعيش الحيوانات البرية وتتفاعل وتلهم محبي الطبيعة حول العالم.">
                 Watch how exotic animals live, interact, and inspire wildlife lovers around the world.
             </p>
-
             <div class="video-box">
                 <video controls autoplay muted loop>
                     <source src="./images/Video Project new.mp4" type="video/mp4">
@@ -223,62 +276,92 @@
         </div>
     </section>
 
+    <!-- ===== Footer ===== -->
     <footer id="main-footer">
-    <div class="footer-inner">
-      <div class="footer-grid">
-        
-        <div class="footer-brand">
-          <p class="NON-LOGO-ICON">🐊</p>
-             <span class="footer-brand-text translate" 
-              data-en="WILDKEEP" 
-              data-ar="الحياة البرية">WILDKEEP</span>
-                     <p class="brand-description translate" 
-             data-en="YOUR TRUSTED PLATFORM FOR EXOTIC PETS — EDUCATIONAL — AND WILDLIFE CONSERVATION AWARENESS." 
-             data-ar="منصتك الموثوقة للحيوانات الأليفة الغريبة - تعليمية - والتوعية بالحفاظ على الحياة البرية.">
-            YOUR TRUSTED PLATFORM FOR EXOTIC PETS — EDUCATIONAL — AND WILDLIFE CONSERVATION AWARENESS.
-          </p>
-        </div>
+        <div class="footer-inner">
+            <div class="footer-grid">
 
-        <div class="footer-col">
-          <h4 class="translate" data-en="ANIMALS" data-ar="الحيوانات">ANIMALS</h4>
-        <div style="font-size:14px; margin-bottom:8px" ><a href="./Html/shop.html?category=reptiles" class="footer-link translate" data-en="REPTILES" data-ar="الزواحف" >REPTILES</a></div>
-          <div style="font-size:14px; margin-bottom:8px" ><a href="./Html/shop.html?category=birds"  class="footer-link translate" data-en="BIRDS" data-ar="الطيور">BIRDS</a></div>
-          <div style="font-size:14px; margin-bottom:8px" ><a href="./Html/shop.html?category=mammals" class="footer-link translate" data-en="MAMMALS" data-ar="الثدييات">MAMMALS</a></div>
-          <div style="font-size:14px; margin-bottom:8px" ><a href="./Html/shop.html?category=Marine" class="footer-link translate" data-en="MARINE CREATURES" data-ar="المخلوقات البحرية">MARINE</a></div>
+                <div class="footer-brand">
+                    <p class="NON-LOGO-ICON">🐊</p>
+                    <span class="footer-brand-text" data-en="WILDKEEP" data-ar="وايلد كيب">WILDKEEP</span>
+                    <p class="brand-description"
+                        data-en="YOUR TRUSTED PLATFORM FOR EXOTIC PETS — EDUCATIONAL — AND WILDLIFE CONSERVATION AWARENESS."
+                        data-ar="منصتك الموثوقة للحيوانات الأليفة الغريبة — تعليمية — والتوعية بالحفاظ على الحياة البرية.">
+                        YOUR TRUSTED PLATFORM FOR EXOTIC PETS — EDUCATIONAL — AND WILDLIFE CONSERVATION AWARENESS.
+                    </p>
+                </div>
 
-        </div>
+                <div class="footer-col">
+                    <h4 data-en="ANIMALS" data-ar="الحيوانات">ANIMALS</h4>
+                    <div style="font-size:14px; margin-bottom:8px">
+                        <a href="./Html/shop.html?category=reptiles" class="footer-link" data-en="REPTILES"
+                            data-ar="الزواحف">REPTILES</a>
+                    </div>
+                    <div style="font-size:14px; margin-bottom:8px">
+                        <a href="./Html/shop.html?category=birds" class="footer-link" data-en="BIRDS"
+                            data-ar="الطيور">BIRDS</a>
+                    </div>
+                    <div style="font-size:14px; margin-bottom:8px">
+                        <a href="./Html/shop.html?category=mammals" class="footer-link" data-en="MAMMALS"
+                            data-ar="الثدييات">MAMMALS</a>
+                    </div>
+                    <div style="font-size:14px; margin-bottom:8px">
+                        <a href="./Html/shop.html?category=Marine" class="footer-link" data-en="MARINE"
+                            data-ar="البحرية">MARINE</a>
+                    </div>
+                </div>
 
-        <div class="footer-col">
-          <h4 class="translate" data-en="LEARN" data-ar="تعلم">LEARN</h4>
-        <div style="font-size:14px; margin-bottom:10px"><a href="./Html/extinct.html"class="footer-link translate" data-en="EXTINCT" data-ar="المنقرضة" >EXTINCT</a></div>
-        <div style="font-size:14px; margin-bottom:10px"><a href="./Html/endangered.html" class="footer-link translate" data-en="ENDANGERED" data-ar="المهددة بالانقراض" >ENDANGERED</a></div> 
-        </div>
+                <div class="footer-col">
+                    <h4 data-en="LEARN" data-ar="تعلم">LEARN</h4>
+                    <div style="font-size:14px; margin-bottom:10px">
+                        <a href="./Html/extinct.html" class="footer-link" data-en="EXTINCT"
+                            data-ar="المنقرضة">EXTINCT</a>
+                    </div>
+                    <div style="font-size:14px; margin-bottom:10px">
+                        <a href="./Html/endangered.html" class="footer-link" data-en="ENDANGERED"
+                            data-ar="المهددة بالانقراض">ENDANGERED</a>
+                    </div>
+                </div>
 
-        <div class="footer-col">
-          <h4 class="translate" data-en="CONTACT" data-ar="اتصل بنا">CONTACT</h4>
-          <div style="font-size:14px; margin-bottom:10px">🔳 HELLO@WILDKEEP.COM</div>
-          <div style="font-size:14px; margin-bottom:10px">📞 +1 (555) 123-4567</div>
-          <div style="font-size:15px" class="translate" data-en="CAIRO, EGYPT" data-ar="القاهرة، مصر">CAIRO, EGYPT</div>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><img src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"></a>
-                <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="IG"></a>
-                <a href="https://twitter.com" target="_blank"><img src="https://img.icons8.com/color/48/twitter--v1.png" alt="TW"></a>
-                <a href="https://wa.me/201234567890" target="_blank"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WA"></a>
-                <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LI"></a>
-                <a href="https://snapchat.com" target="_blank"><img src="https://img.icons8.com/color/48/snapchat--v1.png" alt="SC"></a>
+                <div class="footer-col">
+                    <h4 data-en="CONTACT" data-ar="تواصل معنا">CONTACT</h4>
+                    <div style="font-size:14px; margin-bottom:10px" data-en="🔳 HELLO@WILDKEEP.COM"
+                        data-ar="🔳 HELLO@WILDKEEP.COM">
+                        🔳 HELLO@WILDKEEP.COM
+                    </div>
+                    <div style="font-size:14px; margin-bottom:10px" data-en="📞 +1 (555) 123-4567"
+                        data-ar="📞 +1 (555) 123-4567">
+                        📞 +1 (555) 123-4567
+                    </div>
+                    <div style="font-size:15px" data-en="CAIRO, EGYPT" data-ar="القاهرة، مصر">
+                        CAIRO, EGYPT
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><img
+                                src="https://img.icons8.com/color/48/facebook-new.png" alt="FB"></a>
+                        <a href="https://instagram.com" target="_blank"><img
+                                src="https://img.icons8.com/color/48/instagram-new.png" alt="IG"></a>
+                        <a href="https://twitter.com" target="_blank"><img
+                                src="https://img.icons8.com/color/48/twitter--v1.png" alt="TW"></a>
+                        <a href="https://wa.me/201234567890" target="_blank"><img
+                                src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WA"></a>
+                        <a href="https://linkedin.com" target="_blank"><img
+                                src="https://img.icons8.com/color/48/linkedin.png" alt="LI"></a>
+                        <a href="https://snapchat.com" target="_blank"><img
+                                src="https://img.icons8.com/color/48/snapchat--v1.png" alt="SC"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom" data-en="© 2026 WILDKEEP. ALL RIGHTS RESERVED. BUILT WITH CARE FOR WILDLIFE 🌿."
+                data-ar="© ٢٠٢٦ وايلد كيب. جميع الحقوق محفوظة. صُنع بكل حب للحياة البرية 🌿.">
+                © 2026 WILDKEEP. ALL RIGHTS RESERVED. BUILT WITH CARE FOR WILDLIFE 🌿.
             </div>
         </div>
+    </footer>
 
-      </div>
-
-      <div class="footer-bottom translate" 
-           data-en="© 2026 WILDKEEP. ALL RIGHTS RESERVED. BUILT WITH CARE FOR WILDLIFE 🌿." 
-           data-ar="© ٢٠٢٦ وايلد كيب. جميع الحقوق محفوظة. صُنع بكل حب للحياة البرية 🌿.">
-        © 2026 WILDKEEP. ALL RIGHTS RESERVED. BUILT WITH CARE FOR WILDLIFE 🌿.
-      </div>
-    </div>
-  </footer>
-
-  <script src="../js/footer.js"></script>
+    <script src="js/footer.js"></script>
 </body>
+
 </html>

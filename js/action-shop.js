@@ -92,3 +92,37 @@ if (paw) {
 }
 
 window.addEventListener("DOMContentLoaded", filterByCategory);
+/* ============================================================
+   تحديث placeholder البحث مع تغيير اللغة
+   ============================================================ */
+window.addEventListener('languageChange', (e) => {
+    const lang = e.detail && e.detail.lang;
+    if (!lang || !searchInput) return;
+
+    // placeholder البحث
+    const ph = searchInput.getAttribute(`data-placeholder-${lang}`);
+    if (ph) searchInput.placeholder = ph;
+
+    // ترجمة كل عنصر عنده data-ar في الصفحة
+    document.querySelectorAll('[data-ar]').forEach(el => {
+        if (el.id === 'lang-btn' || el.id === 'theme-btn') return;
+        if (el.tagName === 'INPUT') return; // الـ inputs بتتعمل فوق
+        const text = el.getAttribute(`data-${lang}`);
+        if (text) el.innerText = text;
+    });
+});
+
+// تطبيق اللغة المحفوظة عند تحميل الصفحة
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('selectedLang') || 'en';
+    if (searchInput) {
+        const ph = searchInput.getAttribute(`data-placeholder-${savedLang}`);
+        if (ph) searchInput.placeholder = ph;
+    }
+    document.querySelectorAll('[data-ar]').forEach(el => {
+        if (el.id === 'lang-btn' || el.id === 'theme-btn') return;
+        if (el.tagName === 'INPUT') return;
+        const text = el.getAttribute(`data-${savedLang}`);
+        if (text) el.innerText = text;
+    });
+});

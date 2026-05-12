@@ -4,7 +4,6 @@ body {
   background: #f4efe9;
 }
 
-/* HERO */
 .hero {
   background: linear-gradient(135deg, #1f3d3a, #2e5f5a);
   color: white;
@@ -22,14 +21,12 @@ body {
   color: #d1d5db;
 }
 
-/* CONTAINER */
 .container {
   max-width: 1100px;
   margin: -60px auto 40px;
   padding: 0 20px;
 }
 
-/* GRID */
 .grid {
   display: flex;
   gap: 20px;
@@ -37,7 +34,6 @@ body {
   justify-content: center;
 }
 
-/* CARD */
 .card {
   background: white;
   border-radius: 16px;
@@ -53,7 +49,6 @@ body {
   box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-/* IMAGE FIX */
 .card img {
   width: 100%;
   height: 180px;
@@ -61,7 +56,6 @@ body {
   border-radius: 12px;
 }
 
-/* TITLE */
 .title {
   display: flex;
   justify-content: space-between;
@@ -74,7 +68,6 @@ body {
   font-size: 20px;
 }
 
-/* BADGE */
 .badge {
   background: #16a34a;
   color: white;
@@ -83,14 +76,12 @@ body {
   font-size: 12px;
 }
 
-/* TEXT */
 .desc {
   font-size: 14px;
   color: #555;
   margin: 10px 0 15px;
 }
 
-/* INFO BOX */
 .info-box {
   background: #f3f4f6;
   padding: 10px;
@@ -108,7 +99,6 @@ body {
   font-weight: bold;
 }
 
-/* CAUSE */
 .cause {
   margin-top: 10px;
   font-size: 14px;
@@ -119,7 +109,6 @@ body {
   font-weight: bold;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .grid {
     flex-direction: column;

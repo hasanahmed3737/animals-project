@@ -76,7 +76,6 @@ input:focus {
     border-color: #f0c24f;
 }
 
-/* ===== BUTTON ===== */
 button[type="submit"] {
     background: #030ea9;
     border: none;

@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="../css/ai.css">
     <link rel="stylesheet" href="../css/Header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <script src="../js/ai.js" defer></script>
     <script src="../js/Header.js" defer></script>
     <script src="../js/footer.js" defer></script>
     <title>WildKeep AI Assistant</title>
@@ -26,19 +25,17 @@
                 <a href="categories.html"class="nav-link" data-en="Categories" data-ar="الأقسام">Categories</a>
                 <a href="extinct.html"class="nav-link" data-en="Extinct" data-ar="منقرضه">Extinct</a>
                 <a href="endangered.html" class="nav-link" data-en="Endangered" data-ar="مهدده بالأنقراض" >Endangered</a>
-                <a style="background-color: #3d6b41;" href="ai.html"class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
+                <a style="background-color: #3d6b41 ;" href="ai.html"class="nav-link" data-en="AI Assistant" data-ar="مساعد ذكي">AI Assistant</a>
                 <a href="main.html" class="nav-link" data-en="Index" data-ar="الفهرس">Index</a>
                 <a href="form.html" class="nav-link" data-en="Order" data-ar="طلب">Order</a>
-                <a href="login.html" class="nav-link" data-en="Login" data-ar="تسجيل دخول">Login</a>
-
-                
+                <a href="login.html" class="nav-link" data-en="Login" data-ar="تسجيل دخول">Login</a>               
                 <button id="lang-btn" class="control-btn"> العربية</button>
                 <button id="theme-btn" class="control-btn">🌙</button>
             </nav>
         </div>
     </div>
     <div id="page-ai" class="page">
-        <div style="padding-top:68px;background:#faf6f0;min-height:100vh">
+        <div style="padding-top:68px;min-height:100vh">
             <div class="ai-header">
                 <div class="ai-header-inner">
                     <div class="ai-header-icon">🤖</div>
@@ -55,8 +52,6 @@
                     <p>Answer 5 questions and get your perfect animal match!</p>
                 </div>
             </div>
-
-            <!-- Quiz -->
             <div id="ai-section-quiz" class="quiz-wrap">
                 <div class="quiz-card">
                     <div class="quiz-progress-header">
@@ -69,8 +64,6 @@
                     <button class="btn-quiz-back" onclick="resetQuiz()">← Start over</button>
                 </div>
             </div>
-
-            <!-- Result -->
             <div id="ai-section-result" class="result-wrap">
                 <div class="result-card">
                     <div class="result-icon">🎉</div>
@@ -108,16 +101,18 @@
         </div>
 
         <div class="footer-col">
-          <h4 class="translate" data-en="ANIMALS" data-ar="الحيوانات">ANIMALS</h4>
-          <a href="../Html/reptiles.html" class="footer-link translate" data-en="REPTILES" data-ar="الزواحف" >REPTILES</a>
-          <a  href="../Html/birds.html"  class="footer-link translate" data-en="BIRDS" data-ar="الطيور">BIRDS</a>
-          <a href="../Html/mammals.html" class="footer-link translate" data-en="MAMMALS" data-ar="الثدييات">MAMMALS</a>
+        <h4 class="translate" data-en="ANIMALS" data-ar="الحيوانات">ANIMALS</h4>
+        <div style="font-size:14px; margin-bottom:8px" ><a href="./shop.html?category=reptiles" class="footer-link translate" data-en="REPTILES" data-ar="الزواحف" >REPTILES</a></div>
+        <div style="font-size:14px; margin-bottom:8px" ><a href="./shop.html?category=birds"  class="footer-link translate" data-en="BIRDS" data-ar="الطيور">BIRDS</a></div>
+        <div style="font-size:14px; margin-bottom:8px" ><a href="./shop.html?category=mammals" class="footer-link translate" data-en="MAMMALS" data-ar="الثدييات">MAMMALS</a></div>
+        <div style="font-size:14px; margin-bottom:8px" ><a href="./shop.html?category=marine" class="footer-link translate" data-en="MARINE CREATURES" data-ar="المخلوقات البحرية">MARINE</a></div>
+
         </div>
 
         <div class="footer-col">
-          <h4 class="translate" data-en="LEARN" data-ar="تعلم">LEARN</h4>
-          <a  href="../Html/extinct.html"class="footer-link translate" data-en="EXTINCT" data-ar="المنقرضة" >EXTINCT</a>
-          <a  href="../Html/endangered.html" class="footer-link translate" data-en="ENDANGERED" data-ar="المهددة بالانقراض" >ENDANGERED</a>
+        <h4 class="translate" data-en="LEARN" data-ar="تعلم">LEARN</h4>
+        <div style="font-size:14px; margin-bottom:10px"><a href="extinct.html"class="footer-link translate" data-en="EXTINCT" data-ar="المنقرضة" >EXTINCT</a></div>
+        <div style="font-size:14px; margin-bottom:10px"><a href="endangered.html" class="footer-link translate" data-en="ENDANGERED" data-ar="المهددة بالانقراض" >ENDANGERED</a></div> 
         </div>
 
         <div class="footer-col">
@@ -144,6 +139,6 @@
       </div>
     </div>
   </footer>
-
+   <script src="../js/ai.js" ></script>
 </body>
 </html>

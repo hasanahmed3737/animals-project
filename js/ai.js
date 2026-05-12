@@ -1,4 +1,3 @@
-// ────── COLORS & DATA ──────────────────────────────────────────────────────
 const COLORS = {
   primary:"#3d6b41", primaryLight:"#5a9060", primaryDark:"#2a4a2e",
   secondary:"#8b6f47", accent:"#c8a96e", beige:"#f5efe6",
@@ -32,14 +31,12 @@ const QUIZ_QUESTIONS = [
   { q:"What's your budget?",                          options:["Under $100","$100–$500","$500–$2000","$2000+"] },
 ];
 
-// ────── STATE ──────────────────────────────────────────────────────────────
 let aiMode = 'choose';
 let quizStep = 0;
 let quizAnswers = [];
 let quizRecommendation = null;
 let selectedAnimal = null;
 
-// ────── AI PAGE FUNCTIONS ──────────────────────────────────────────────────
 function setAIMode(mode) {
   aiMode = mode;
   ['choose','quiz','result'].forEach(m => {
@@ -52,7 +49,6 @@ function setAIMode(mode) {
   if (mode === 'result') renderResult();
 }
 
-// ────── QUIZ FUNCTIONS ─────────────────────────────────────────────────────
 function renderQuizStep() {
   document.getElementById('quiz-step-label').textContent = `Question ${quizStep + 1} of ${QUIZ_QUESTIONS.length}`;
   document.getElementById('quiz-pct-label').textContent = `${Math.round((quizStep / QUIZ_QUESTIONS.length) * 100)}% done`;
@@ -99,10 +95,7 @@ function renderResult() {
   };
 }
 
-// ────── CHAT FUNCTIONS ─────────────────────────────────────────────────────
-// Chat functions removed - chat mode disabled
 
-// ────── HELPER FUNCTIONS ───────────────────────────────────────────────────
 function starsHTML(rating, size = 20) {
   const filled = Math.round(rating);
   const stars = "⭐".repeat(filled) + "☆".repeat(5 - filled);
@@ -113,13 +106,11 @@ function getAnimalById(id) {
   return ANIMALS.find(a => a.id === id);
 }
 
-// ────── INIT ───────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize AI page
   setAIMode('choose');
 });
 
-// Allow Enter key to send chat messages
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && aiMode === 'chat') {
     const input = document.getElementById('chat-input');

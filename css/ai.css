@@ -6,8 +6,6 @@
     --border-color: #e8ddd0;
 }
 
-
-
 .ai-header {
     background: linear-gradient(135deg, #2a4a2e, #d7e2f1);
     padding: 48px 5vw 40px;
@@ -36,7 +34,6 @@
 }
 
 
-/* --- Choose Mode Section --- */
 .ai-choose {
     max-width: 700px;
     margin: 60px auto;
@@ -78,7 +75,6 @@
 }
 
 
-/* --- Quiz Section --- */
 .quiz-wrap {
     max-width: 600px;
     margin: 48px auto;

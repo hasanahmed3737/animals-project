@@ -16,7 +16,7 @@
 
 <body>
 
-    <!-- ===== الهيدر ===== -->
+  
     <div id="navbar" class="header-wrapper">
         <div class="heading">
             <img src="../images/logo.jpg" alt="icon" class="icon">
@@ -36,55 +36,18 @@
                 <a href="login.html" class="nav-link" data-en="Login" data-ar="تسجيل دخول">Login</a>
                 <button id="lang-btn" class="control-btn">العربية</button>
                 <button id="theme-btn" class="control-btn">🌙</button>
-
-                <!-- أيقونة السلة -->
-                <div id="cart-icon-wrapper" class="control-btn"
-                    style="position:relative;cursor:pointer;display:flex;align-items:center;">
-                    <span style="font-size:1.5rem;">🛒</span>
-                    <span id="cart-count"
-                        style="position:absolute;top:-5px;right:-5px;background:#e74c3c;color:white;border-radius:50%;padding:2px 6px;font-size:10px;font-weight:bold;">0</span>
-                </div>
             </nav>
         </div>
     </div>
 
-    <!-- سايدبار السلة -->
-    <div id="cart-sidebar"
-        style="position:fixed;top:0;right:-100%;width:350px;height:100vh;background:white;box-shadow:-5px 0 15px rgba(0,0,0,0.2);transition:0.4s ease;z-index:2000;padding:20px;display:flex;flex-direction:column;color:#333;">
-        <div
-            style="display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #3d6b41;padding-bottom:10px;">
-            <h3 style="margin:0;color:#3d6b41;">سلة المشتريات 🐾</h3>
-            <button id="close-cart"
-                style="background:none;border:none;font-size:1.8rem;cursor:pointer;color:#888;">&times;</button>
-        </div>
-        <div id="cart-items-list" style="flex-grow:1;overflow-y:auto;margin-top:20px;">
-            <p id="cart-empty-msg" style="text-align:center;color:#999;margin-top:50px;">السلة فارغة حالياً</p>
-        </div>
-        <div id="cart-summary" style="border-top:1px solid #eee;padding-top:15px;display:none;">
-            <div
-                style="display:flex;justify-content:space-between;font-weight:bold;font-size:1.1rem;margin-bottom:15px;">
-                <span>الإجمالي:</span>
-                <span style="color:#3d6b41;">$<span id="total-price">0</span></span>
-            </div>
-            <a href="form.html" style="text-decoration:none;">
-                <button
-                    style="width:100%;background:#3d6b41;color:white;border:none;padding:12px;border-radius:8px;cursor:pointer;font-weight:bold;">إتمام
-                    الطلب</button>
-            </a>
-        </div>
     </div>
-
-    <!-- ===== المحتوى الرئيسي ===== -->
     <main>
         <h1 class="p-shop" data-en="WildKeep 🐒🐾" data-ar="وايلد كيب 🐒🐾">
             WildKeep<sup>🐒🐾</sup>
         </h1>
         <input id="search" type="text" data-placeholder-en="Search 🔍" data-placeholder-ar="ابحث 🔍"
             placeholder="Search 🔍">
-
         <section>
-
-            <!-- ======= REPTILES ======= -->
             <div class="cards-container">
                 <div class="animal-card" data-category="reptiles">
                     <div class="card-image"><img src="../images/Ball python.jfif" alt="ball python"></div>
@@ -108,7 +71,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="reptiles">
                     <div class="card-image"><img src="../images/chameleon.jpeg" alt="chameleon"></div>
@@ -131,7 +93,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="reptiles">
                     <div class="card-image"><img src="../images/turtle.jpeg" alt="turtle"></div>
@@ -155,7 +116,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="reptiles">
                     <div class="card-image"><img src="../images/corn snake.jpeg" alt="corn snake"></div>
@@ -178,7 +138,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="reptiles">
                     <div class="card-image"><img src="../images/Lguana.jpeg" alt="iguana"></div>
@@ -202,8 +161,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- ======= MAMMALS ======= -->
             <div class="cards-container">
                 <div class="animal-card" data-category="mammals">
                     <div class="card-image"><img src="../images/Dog.jpeg" alt="dog"></div>
@@ -227,7 +184,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="mammals">
                     <div class="card-image"><img src="../images/cat.jpeg" alt="cat"></div>
@@ -251,7 +207,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="mammals">
                     <div class="card-image"><img src="../images/rabbit.jpeg" alt="rabbit"></div>
@@ -274,7 +229,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="mammals">
                     <div class="card-image"><img src="../images/hamster.jpeg" alt="hamster"></div>
@@ -299,7 +253,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="mammals">
                     <div class="card-image"><img src="../images/guinea big.jpeg" alt="guinea pig"></div>
@@ -322,8 +275,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- ======= MARINE ======= -->
             <div class="cards-container">
                 <div class="animal-card" data-category="marine">
                     <div class="card-image"><img src="../images/gold fish.webp" alt="goldfish"></div>
@@ -346,7 +297,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="marine">
                     <div class="card-image"><img src="../images/betta fish.jpeg" alt="betta fish"></div>
@@ -369,7 +319,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="marine">
                     <div class="card-image"><img src="../images/guppy.jpeg" alt="guppy"></div>
@@ -392,7 +341,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="marine">
                     <div class="card-image"><img src="../images/Angel fish.jpeg" alt="angelfish"></div>
@@ -414,7 +362,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="marine">
                     <div class="card-image"><img src="../images/molly fish.jpeg" alt="molly fish"></div>
@@ -437,8 +384,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- ======= BIRDS ======= -->
             <div class="cards-container">
                 <div class="animal-card" data-category="birds">
                     <div class="card-image"><img src="../images/parrot.jfif" alt="parrot"></div>
@@ -461,7 +406,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="birds">
                     <div class="card-image"><img src="../images/Budgerier.jpeg" alt="budgerigar"></div>
@@ -484,7 +428,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="birds">
                     <div class="card-image"><img src="../images/Canary.webp" alt="canary"></div>
@@ -507,7 +450,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="birds">
                     <div class="card-image"><img src="../images/cocktail.jfif" alt="cockatiel"></div>
@@ -530,7 +472,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="cards-container">
                 <div class="animal-card" data-category="birds">
                     <div class="card-image"><img src="../images/lovebirds.jpg" alt="lovebirds"></div>
@@ -556,8 +497,6 @@
 
         </section>
     </main>
-
-    <!-- ===== الفوتر ===== -->
     <footer id="main-footer">
         <div class="footer-inner">
             <div class="footer-grid">

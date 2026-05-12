@@ -204,6 +204,7 @@ section {
     }
 
 }
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -214,5 +215,91 @@ section {
 .animal-card {
     background: white;
     border-radius: 12px;
+}
+
+
+/* ============================================================
+   DARK MODE - shop page
+   ============================================================ */
+
+body.dark-mode {
+    background-color: #111 !important;
+    color: #e8e8e8 !important;
+}
+
+body.dark-mode main {
+    background-color: #111 !important;
+}
+
+body.dark-mode .p-shop {
+    color: #e87a3a !important;
+}
+
+body.dark-mode #search {
+    background-color: #1e1e1e !important;
+    color: #e8e8e8 !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode #search::placeholder {
+    color: #777 !important;
+}
+
+body.dark-mode .animal-card {
+    background: #242424 !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+    color: #e8e8e8 !important;
+}
+
+body.dark-mode .card-image {
+    background: #1a1a1a !important;
+}
+
+body.dark-mode .card-top h3 {
+    color: #e8e8e8 !important;
+}
+
+body.dark-mode .card-location {
+    color: #aaa !important;
+}
+
+body.dark-mode .card-footer {
+    border-top: 1px solid #333 !important;
+}
+
+body.dark-mode .badge-safe {
+    background: #1a3a1a !important;
+    color: #7ec882 !important;
+}
+
+body.dark-mode .tag.green {
+    background: #1a3a1a !important;
+    color: #7ec882 !important;
+}
+
+body.dark-mode .tag.blue {
+    background: #1a1a3a !important;
+    color: #7ec8f8 !important;
+}
+
+body.dark-mode footer {
+    background: #0d0d0d !important;
+    color: #aaa !important;
+}
+
+body.dark-mode .footer-brand-text,
+body.dark-mode .footer-col h4 {
+    color: #e8e8e8 !important;
+}
+
+body.dark-mode .footer-bottom {
+    border-top: 1px solid #333 !important;
+    color: #666 !important;
+}
+
+/* الـ cart sidebar في الداك مود */
+body.dark-mode #cart-sidebar {
+    background: #1e1e1e !important;
+    color: #e8e8e8 !important;
 }
 
